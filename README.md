@@ -1,1 +1,1 @@
-# PROJET_JAVA_HEARSTONE  fait par Hamza Yahiani et Ibrahim Boubeker
+# PROJET_JAVA_HEARTHSTONE  fait par Hamza Yahiani et Ibrahim Boubeker
