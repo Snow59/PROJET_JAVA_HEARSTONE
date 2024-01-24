@@ -1,6 +1,9 @@
 package IMT_HearStone;
 
 
+// En utilisant private et final pour les attributs de la classe Carte, on s'assure que les caractéristiques des cartes, comme leur nom et coût, ne sont pas modifiées accidentellement après leur créatio.
+
+
 public class Carte {
     private static int compteurId = 0; 
 
