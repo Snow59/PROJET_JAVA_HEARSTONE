@@ -51,21 +51,21 @@ public class Carte {
                 break;
             case "Mascotte":
                 int effet = random.nextInt(3); // 0 pour Attaque, 1 pour Armure, 2 pour Soins
-                int cibleEffet = random.nextInt(3); // 0 pour Champion, 1 pour Carte Posée, 2 pour Prochaine Carte
+                int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte Posée
 		/**
 		*La mascotte a été complexe et long à faire mais le principe c'est  quand on invoque cette carte 
   		* qui ne coutera que 1 de mana , elle fait qql chose de totalement aléatoire !
-    		* elle choisit entre notre champion , notre prochaine carte et l'une de nos carte déja posés
+    		* elle choisit entre notre champion , l'une de nos carte déja posés
       		* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
 		*/
+
+		
                 Carte carteCiblee;
                 if (cibleEffet == 0) { // Effet sur le Champion
                     appliquerEffetMascotte(champion, effet);
                 } else if (cibleEffet == 1 && !cartesEnJeu.isEmpty()) { // Effet sur une Carte Posée
                     carteCiblee = cartesEnJeu.get(random.nextInt(cartesEnJeu.size()));
                     appliquerEffetMascotte(carteCiblee, effet);
-                } else if (cibleEffet == 2 && prochaineCarte != null) { // Effet sur la Prochaine Carte
-                    appliquerEffetMascotte(prochaineCarte, effet);
                 }
                 break;
         }
