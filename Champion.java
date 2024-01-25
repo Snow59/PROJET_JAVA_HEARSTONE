@@ -11,11 +11,17 @@ public abstract class Champion implements ActionDeJeu {
     protected String nom;
     protected int pointsDeVie;
     protected int puissanceAttaque;
+    protected int manaActuel;
+    protected int manaMaximum;
 
-    public Champion(String nom, int pointsDeVie, int puissanceAttaque) {
+    public Champion(String nom, int pointsDeVie, int puissanceAttaque, int mana) {
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
         this.puissanceAttaque = puissanceAttaque;
+        this.manaActuel = 3; // Démarre avec 3 points de mana 
+        this.manaMaximum = 3;
+        //je ne fais pas this.mana = mana , pour evité que qql ne créé un champion avec mana illimité lol
+
     }
 
     @Override
@@ -42,7 +48,26 @@ public abstract class Champion implements ActionDeJeu {
     public String getNom() {
         return nom;
     }
+    
+    public void recupererMana() {
+        this.manaMaximum += 1; 
+        this.manaActuel = this.manaMaximum; 
+    }
 
+    public boolean utiliserMana(int quantite) {
+        if (this.manaActuel >= quantite) {
+            this.manaActuel -= quantite;
+            return true;
+        } 
+        return false;
+    }
+    public int getManaActuel() {
+        return manaActuel;
+    }
+
+    public int getManaMaximum() {
+        return manaMaximum;
+    }
     public int getPointsDeVie() {
         return pointsDeVie;
     }
