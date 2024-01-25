@@ -42,7 +42,7 @@ public abstract class Champion implements ActionDeJeu {
             System.out.println("La partie est terminée car " + this.nom + " est maintenant mort.");
             
         }
-        System.out.println(this.nom + " a subis " + degats + ", sa vie est  mtn de : " + pointsDeVie );
+        System.out.println(this.nom + " a subis " + degats + " points de dégats, sa vie est  mtn de : " + pointsDeVie );
     }
 
     public String getNom() {
