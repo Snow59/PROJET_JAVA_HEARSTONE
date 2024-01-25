@@ -7,8 +7,7 @@ import java.util.List;
 // Elles seront distribuées aléatoirement aux champions en début de game.
 // Biensur ce sont des cartes qui existent vraiment
 
-//Pour rappel le constructeur Carte se construit comment ça : Carte(Nom, CoûtMana, Dégatattaque , Armure)
-//
+//Pour rappel le constructeur Carte se construit comment ça : Carte(Nom, CoûtMana, Dégatattaque , Armure, VieRendu)
 
 public class Deck {
     public static List<Carte> creerDeck() {
