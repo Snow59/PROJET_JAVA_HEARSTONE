@@ -59,10 +59,8 @@ public class Mage extends Champion {
         super.attaquer(cible); 
     }
 
-    @Override
-    public void special() {
-        Champion cible = /* définir la cible */;
-        this.capaciteSpeciale.executer(cible);
+    public void special(Champion ennemi) {
+        this.capaciteSpeciale.executer(ennemi);
     }
 
   
