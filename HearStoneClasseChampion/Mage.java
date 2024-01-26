@@ -10,8 +10,7 @@ public class Mage extends Champion {
     });
   
     public static final Mage MEDIVH = new Mage("Medivh", 30, 2, cible -> {
-        //Je ne peux pas mettre this.addArmure psk c du static et javais des erreurs 
-    cible.addArmure(5);
+    MEDIVH.addArmure(5); // MEDIVH s'ajoute de l'armure à lui-même
     });
 
     public static final Mage KHADGAR = new Mage("Khadgar", 30, 1, cible -> {
