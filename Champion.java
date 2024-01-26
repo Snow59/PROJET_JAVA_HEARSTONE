@@ -65,6 +65,10 @@ public abstract class Champion implements ActionDeJeu {
         return manaActuel;
     }
 
+    public void addArmure(int armureAjoutee) {
+        this.armure += armureAjoutee;
+    }
+
     public int getManaMaximum() {
         return manaMaximum;
     }
