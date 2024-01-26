@@ -2,6 +2,7 @@ package IMT_HearStone;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 // Donc dans cette classe Deck j'ai voulu sur les centaines de cartes que possède le jeux , en y ajouter 20.
 // Elles seront distribuées aléatoirement aux champions en début de game.
@@ -47,6 +48,20 @@ public class Deck {
         deck.add(new Carte("Assassin Furtif", 5, 5, 0, 0, "Classique"));
 
         return deck;
+    }
+    public Carte piocherCarte() {
+        if (!cartes.isEmpty()) {
+            return cartes.remove(0); 
+        }
+        return null; // Retourne null si le deck est vide
+    }
+
+    public void melangerDeck() {
+        Collections.shuffle(cartes); 
+    }
+
+    public List<Carte> getCartes() {
+        return cartes;
     }
 }
 
