@@ -10,11 +10,11 @@ public class Mage extends Champion {
     });
   
     public static final Mage MEDIVH = new Mage("Medivh", 30, 2, cible -> {
-        this.addArmure(5);
+        //Je ne peux pas mettre this.addArmure psk c du static et javais des erreurs 
+    cible.addArmure(5);
     });
 
     public static final Mage KHADGAR = new Mage("Khadgar", 30, 1, cible -> {
-        // Capacité spéciale de Khadgar: infliger -2 PV au champion ennemi
         cible.subirDegats(2);
     });
 
@@ -30,7 +30,6 @@ public class Mage extends Champion {
 
     @Override
     public void jouerTour() {
-        // Récupération du mana en début de tour
         this.recupererMana();
     
         Carte cartePiochee = this.deck.piocherCarte();
@@ -38,7 +37,6 @@ public class Mage extends Champion {
             main.add(cartePiochee);
         }
     
-        // Jouer des cartes de la main
         for (Carte carte : new ArrayList<>(main)) {
             if (this.manaActuel >= carte.getCoutMana()) {
                 jouerCarte(carte);
@@ -49,6 +47,14 @@ public class Mage extends Champion {
     }
 
 
+    public void setDeck(Deck deck) {
+        this.deck = deck;
+    }
+
+    public Deck getDeck() {
+        return this.deck;
+    }
+
     @Override
     public void attaquer(Attaquable cible) {
         super.attaquer(cible); 
@@ -56,6 +62,7 @@ public class Mage extends Champion {
 
     @Override
     public void special() {
+        Champion cible = /* définir la cible */;
         this.capaciteSpeciale.executer(cible);
     }
 
