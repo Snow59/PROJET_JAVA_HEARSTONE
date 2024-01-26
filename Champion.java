@@ -13,6 +13,7 @@ public abstract class Champion implements ActionDeJeu {
     protected int puissanceAttaque;
     protected int manaActuel;
     protected int manaMaximum;
+    protected int armure;
 
     public Champion(String nom, int pointsDeVie, int puissanceAttaque, int mana) {
         this.nom = nom;
