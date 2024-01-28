@@ -10,10 +10,16 @@ import java.util.Collections;
 
 //Pour rappel le constructeur Carte se construit comme ça : Carte(Nom, CoûtMana, Dégatattaque , Armure, VieRendu, TypeDeCarte)
 
-public class Deck {
+public class Deck{
+	
+	
+
+	private List<Carte> cartes;
+	
     public static List<Carte> creerDeck() {
         List<Carte> deck = new ArrayList<>();
-
+        
+                
         // Ajout de 30 cartes avec une variété de types et de capacités
         deck.add(new Carte("Explosion de Lave", 2, 3, 0, 0, "Classique"));
         deck.add(new Carte("Gardien Protecteur", 4, 0, 6, 0, "Protecteur"));
@@ -49,6 +55,14 @@ public class Deck {
 
         return deck;
     }
+    
+    public static void associerDeck(Champion champion) {
+        List<Carte> deckInitial = creerDeck(); // Crée un nouveau deck avec toutes les cartes
+        Collections.shuffle(deckInitial); // Mélange le deck
+        List<Carte> deckPourChampion = new ArrayList<>(deckInitial.subList(0, 5)); // Prend les 5 premières cartes
+        champion.setDeck(deckPourChampion); // Associe ce deck au champion
+    }
+    
     public Carte piocherCarte() {
         if (!cartes.isEmpty()) {
             return cartes.remove(0); 
@@ -63,6 +77,7 @@ public class Deck {
     public List<Carte> getCartes() {
         return cartes;
     }
+    
 }
 
 
