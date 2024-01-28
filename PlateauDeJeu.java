@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class PlateauDeJeu {
+public class PlateauDeJeu{
     private Champion joueur;
     private Champion adversaire;
     private List<Carte> mainJoueur;
@@ -24,7 +24,7 @@ public class PlateauDeJeu {
     }
 
     private void distribuerCartesInitiales(Champion champion, List<Carte> main) {
-        List<Carte> deck = champion.getDeck().getCartes();
+        List<Carte> deck = mainJoueur;
         Collections.shuffle(deck);
         for (int i = 0; i < 5 && i < deck.size(); i++) {
             main.add(deck.get(i));
@@ -33,7 +33,7 @@ public class PlateauDeJeu {
 
     public void jouerCarte(Champion champion, Carte carte) {
         if (champion.utiliserMana(carte.getCoutMana())) {
-            carte.action(adversaire, this, mainAdversaire, null); // Exemple d'utilisation
+            //carte.action(joueur , adversaire, this, mainJoueur, mainAdversaire); // Exemple d'utilisation
         }
     }
 
@@ -45,6 +45,12 @@ public class PlateauDeJeu {
     public List<Carte> getMainAdversaire() {
         return mainAdversaire;
     }
-
+    
+    
+    
+    public void ajouterProtecteur(Carte carte)
+    {
+    	
+    }
     // Autres méthodes utiles
 }
