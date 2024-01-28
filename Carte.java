@@ -1,5 +1,6 @@
 package IMT_HearStone;
 
+
 import java.util.Random;
 import java.util.List;
 
@@ -11,9 +12,9 @@ public class Carte {
     private final int id;
     private final String nom;
     private final int coutMana;
-    private final int degatsAttaque;
-    private final int addArmure;
-    private final int restoreHealth;
+    private int degatsAttaque;
+    private int addArmure;
+    private int restoreHealth;
     private final String type; // "Classique", "Protecteur", "Soigneur", "Mascotte"
 
     public Carte(String nom, int coutMana, int degatsAttaque, int addArmure, int restoreHealth, String type) {
@@ -26,7 +27,7 @@ public class Carte {
         this.type = type;
     }
 
-    public void action(Champion cible, PlateauDeJeu plateau, List<Carte> cartesEnJeu, Carte prochaineCarte) {
+    public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau, List<Carte> cartesEnJeu , List<Carte> MesCarteEnJeux, List<Carte> cartesEnJeuAdversaire) {
         Random random = new Random();
 
         switch (type) {
@@ -35,15 +36,19 @@ public class Carte {
                 cible.subirDegats(degatsAttaque);
                 break;
             case "Protecteur":
+            	
                 // Les protecteurs offrent une protection font office de tank ( comme Cho'Gath ) ils vont tank les degats dans leur armures 
-		// Ils seront biensur élevé en mana car très utile.
+            	// Ils seront biensur élevé en mana car très utile.
                 plateau.ajouterProtecteur(this);
                 break;
             case "Soigneur":
+            	
+            	int cibleeffet = random.nextInt(2);
+            	
                 // Les soigneurs peuvent soigner un allié ou un ennemi.
-                if (!cartesEnJeu.isEmpty()) {
-                    Carte carteCiblee = cartesEnJeu.get(random.nextInt(cartesEnJeu.size()));
-                    carteCiblee.soigner(restoreHealth);
+                if (cibleeffet == 0) {
+                    
+                	invocateur.soigner(restoreHealth);
                 } else {
                     cible.soigner(restoreHealth);
                 }
@@ -53,24 +58,35 @@ public class Carte {
                 int effet = random.nextInt(3); // 0 pour Attaque, 1 pour Armure, 2 pour Soins
                 int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte Posée
 		/**
+		 * 
 		*La mascotte a été complexe et long à faire mais le principe c'est  quand on invoque cette carte 
   		* qui ne coutera que 1 de mana , elle fait qql chose de totalement aléatoire !
-    		* elle choisit entre notre champion , l'une de nos carte déja posés
-      		* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
+    	* elle choisit entre notre champion , l'une de nos carte déja posés
+      	* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
 		*/
 
 		
                 Carte carteCiblee;
                 if (cibleEffet == 0) { // Effet sur le Champion
-                    appliquerEffetMascotte(champion, effet);
-                } else if (cibleEffet == 1 && !cartesEnJeu.isEmpty()) { // Effet sur une Carte Posée
+                	
+                    appliquerEffetMascotteChampion(cible); // Je boost lattaque de +1
+                    
+                } else if (cibleEffet == 1) { // Effet sur une Carte Posée
+                	
                     carteCiblee = cartesEnJeu.get(random.nextInt(cartesEnJeu.size()));
                     appliquerEffetMascotte(carteCiblee, effet);
                 }
                 break;
         }
     }
-
+    
+    
+   private void appliquerEffetMascotteChampion(Champion champion) {
+	   
+	   champion.setPuissanceAttaque(1);
+   }
+   
+   
    private void appliquerEffetMascotte(Carte carte, int effet) {
         switch (effet) {
             case 0: // Boost Attaque
@@ -88,7 +104,22 @@ public class Carte {
                 break;
         }
     }
-
+   
+    private void boostAttaque(int i) {
+    	
+    	this.degatsAttaque += i;
+    	
+    }
+    
+    private void boostArmure(int i) {
+    	
+    	this.addArmure += i;
+    }
+    
+    private void soigner(int i) {
+    	
+    	this.restoreHealth += i;
+    }
 	
     public boolean peutRecevoirAttaque() {
 	// je verifie car si j'ai posé une carte de protection qui elle n'a pas pour but d'attaquer je ne vais pas lui donner 1 d'attaque
