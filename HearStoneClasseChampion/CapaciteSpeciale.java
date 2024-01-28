@@ -1,6 +1,8 @@
-package IMT_HearStone;
+package HearStoneClasseChampion;
 
-@FunctionalInterface
+import IMT_HearStone.Champion;
+
+
 public interface CapaciteSpeciale {
-    void executer(Champion cible);
+    void special(Champion cible);
 }
