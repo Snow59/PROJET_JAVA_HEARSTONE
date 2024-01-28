@@ -1,5 +1,7 @@
 package IMT_HearStone;
 
+import java.util.List;
+
 /**
  * Classe abstraite Champion.
  * En faisant de Champion une classe abstraite, une structure solide est établie pour le jeu,
@@ -14,7 +16,10 @@ public abstract class Champion implements ActionDeJeu {
     protected int manaActuel;
     protected int manaMaximum;
     protected int armure;
+    
+    private List<Carte> deck;
 
+    
     public Champion(String nom, int pointsDeVie, int puissanceAttaque, int mana) {
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
@@ -25,16 +30,19 @@ public abstract class Champion implements ActionDeJeu {
 
     }
 
-    @Override
-    public abstract void jouerTour();
 
     @Override
-    public void attaquer(Attaquable cible) {
+    public void attaquer(Champion cible) {
         cible.subirDegats(puissanceAttaque);
     }
 
-    @Override
-    public abstract void special();
+    
+    
+    public void soigner(int i) {
+    	
+    	this.pointsDeVie += i;
+    }
+    
     
     public void subirDegats(int degats) {
         this.pointsDeVie -= degats;
@@ -49,6 +57,24 @@ public abstract class Champion implements ActionDeJeu {
     public String getNom() {
         return nom;
     }
+    
+    
+    public void setDeck(List<Carte> deck) {
+        this.deck = deck;
+    }
+    
+    public void getDeck() {
+    	
+    	System.out.println("Deck de "+this.getNom());
+    	for (Carte carte : deck) {
+            System.out.println(carte);
+        }
+    	System.out.println("\n");
+        
+    }
+    
+    
+    
     
     public void recupererMana() {
         this.manaMaximum += 1; 
@@ -76,13 +102,17 @@ public abstract class Champion implements ActionDeJeu {
     public int getPointsDeVie() {
         return pointsDeVie;
     }
-
+    
     public void setPointsDeVie(int pointsDeVie) {
         if (pointsDeVie >= 0) {
             this.pointsDeVie = pointsDeVie;
         }
     }
 
+    public void setPuissanceAttaque(int i) {
+    	this.puissanceAttaque  += i ;
+    }
+    
     public int getPuissanceAttaque() {
         return puissanceAttaque;
     }
