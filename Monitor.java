@@ -20,6 +20,8 @@ public class Monitor extends PlateauDeJeu{
 	}
 	
 	public void jouerTour(Champion joueur) {
+		joueur.attaquer(adversaire);   //jaina.attaquer(medivh);
+		
 	    joueur.recupererMana();
 	    System.out.println("Vous voulez faire quoi ? \n"
 	            + "1 : jouer une carte ?\n"
