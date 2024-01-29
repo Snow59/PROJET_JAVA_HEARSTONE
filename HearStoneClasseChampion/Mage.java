@@ -20,7 +20,7 @@ public class Mage extends Champion {
     public static final Mage MEDIVH;
 
     static {
-        MEDIVH = new Mage("Medivh", 30, 2, null);
+        MEDIVH = new Mage("Medivh", 30, 1, null);
         MEDIVH.capaciteSpeciale = cible -> {
             MEDIVH.addArmure(5);
         };
