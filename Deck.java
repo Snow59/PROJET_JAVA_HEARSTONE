@@ -2,6 +2,7 @@ package IMT_HearStone;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import javax.sound.sampled.LineListener;
 
@@ -32,15 +33,15 @@ public class Deck{
         deck.add(new Carte("Mage du Feu", 5, 5, 0, 0, "Classique"));
         deck.add(new Carte("Bouclier de Fer", 2, 0, 5, 0, "Protecteur"));
         deck.add(new Carte("PrÃªtre de la Vie", 4, 0, 0, 5, "Soigneur"));
-        deck.add(new Carte("Mascotte FÃ©roce", 2, 1, 1, 1, "Mascotte"));
+        deck.add(new Carte("Mascotte FÃ©roce", 1, 0, 0, 0, "Mascotte"));
         deck.add(new Carte("Archer Ã‰lite", 4, 5, 0, 0, "Classique"));
-        deck.add(new Carte("Chevalier Protecteur", 6, 2, 7, 0, "Protecteur"));
+        deck.add(new Carte("Chevalier Protecteur", 6, 0, 7, 0, "Protecteur"));
         deck.add(new Carte("Chaman GuÃ©risseur", 5, 0, 0, 6, "Soigneur"));
         deck.add(new Carte("Dragon Enchanteur", 8, 8, 0, 0, "Classique"));
         deck.add(new Carte("Gardien de l'Ordre", 7, 0, 8, 0, "Protecteur"));
         deck.add(new Carte("Mascotte Magique", 3, 0, 0, 0, "Mascotte"));
         deck.add(new Carte("NÃ©cromancien", 6, 6, 0, 0, "Classique"));
-        deck.add(new Carte("Paladin de la LumiÃ¨re", 7, 3, 4, 0, "Protecteur"));
+        deck.add(new Carte("Paladin de la LumiÃ¨re", 7, 0, 4, 0, "Protecteur"));
         deck.add(new Carte("Mascotte de la Chance", 2, 0, 0, 0, "Mascotte"));
         deck.add(new Carte("Soldat Endurci", 5, 4, 2, 0, "Classique"));
         deck.add(new Carte("Ã‰lÃ©mentaire de Glace", 6, 0, 7, 0, "Protecteur"));
@@ -65,13 +66,8 @@ public class Deck{
         List<Carte> deckPourChampion = new ArrayList<>(deckInitial.subList(0, 5)); // Prend les 5 premiÃ¨res cartes
         champion.setDeck(deckPourChampion); // Associe ce deck au champion
     }
-    
-    public Carte piocherCarte() {
-        if (!cartes.isEmpty()) {
-            return cartes.remove(0); 
-        }
-        return null; // Retourne null si le deck est vide
-    }
+
+     
 
     public static void melangerDeck(List<Carte> carte) {
         Collections.shuffle(carte); 
@@ -83,27 +79,26 @@ public class Deck{
     		if (carte.getId() == id){
     			return carte;
     		}
-    		else {
-    			System.out.println("Carte non trouvé");
-    		}
     	}
     		
 		return null;
     }
-    
-    
-		
-    
-    	
-//    	for (int i = 0 ; i < champion.getDeck().size(); i++)
-//    	{
-//        
-//    			if (id == champion.getDeck().getIdid) )
-//    			return champion.get(id);
-//    	}
-    }
-    
 
+	public static Carte piocherCarte() {
+		
+		
+		 	Random random = new Random();
+	        int index = random.nextInt(creerDeck().size()); // Sélectionne un indice aléatoire
+	        return creerDeck().get(index);
+			
+			
+    
+    
+		}
+}
+    
+   
+    
 
 
 
