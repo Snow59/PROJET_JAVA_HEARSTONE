@@ -27,8 +27,10 @@ public class Carte {
         this.type = type;
     }
 
-    public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau, List<Carte> cartesEnJeu , List<Carte> MesCarteEnJeux, List<Carte> cartesEnJeuAdversaire) {
+    public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau , List<Carte> cartesEnJeu , List<Carte> carteEnJeuJoueur, List<Carte> cartesEnJeuAdversaire) {
         Random random = new Random();
+        System.out.println("Carte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
+        System.out.println("Carte sur le plateau du cible "+cible.getNom()+" :  "+cartesEnJeuAdversaire);
 
         switch (type) {
             case "Classique":
@@ -38,14 +40,14 @@ public class Carte {
             case "Protecteur":
             	
                 // Les protecteurs offrent une protection font office de tank ( comme Cho'Gath ) ils vont tank les degats dans leur armures 
-            	// Ils seront biensur élevé en mana car très utile.
+            	// Ils seront biensur Ã©levÃ© en mana car trÃ¨s utile.
                 plateau.ajouterProtecteur(this);
                 break;
             case "Soigneur":
             	
             	int cibleeffet = random.nextInt(2);
             	
-                // Les soigneurs peuvent soigner un allié ou un ennemi.
+                // Les soigneurs peuvent soigner un alliÃ© ou un ennemi.
                 if (cibleeffet == 0) {
                     
                 	invocateur.soigner(restoreHealth);
@@ -55,13 +57,14 @@ public class Carte {
 		
                 break;
             case "Mascotte":
+            	System.out.println("Je suis une macostte");
                 int effet = random.nextInt(3); // 0 pour Attaque, 1 pour Armure, 2 pour Soins
-                int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte Posée
+                int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte PosÃ©e
 		/**
 		 * 
-		*La mascotte a été complexe et long à faire mais le principe c'est  quand on invoque cette carte 
-  		* qui ne coutera que 1 de mana , elle fait qql chose de totalement aléatoire !
-    	* elle choisit entre notre champion , l'une de nos carte déja posés
+		*La mascotte a Ã©tÃ© complexe et long Ã  faire mais le principe c'est  quand on invoque cette carte 
+  		* qui ne coutera que 1 de mana , elle fait qql chose de totalement alÃ©atoire !
+    	* elle choisit entre notre champion , l'une de nos carte dÃ©ja posÃ©s
       	* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
 		*/
 
@@ -71,7 +74,7 @@ public class Carte {
                 	
                     appliquerEffetMascotteChampion(cible); // Je boost lattaque de +1
                     
-                } else if (cibleEffet == 1) { // Effet sur une Carte Posée
+                } else if (cibleEffet == 1) { // Effet sur une Carte PosÃ©e
                 	
                     carteCiblee = cartesEnJeu.get(random.nextInt(cartesEnJeu.size()));
                     appliquerEffetMascotte(carteCiblee, effet);
@@ -81,10 +84,12 @@ public class Carte {
     }
     
     
+   
    private void appliquerEffetMascotteChampion(Champion champion) {
 	   
 	   champion.setPuissanceAttaque(1);
    }
+   
    
    
    private void appliquerEffetMascotte(Carte carte, int effet) {
@@ -99,7 +104,7 @@ public class Carte {
                 carte.boostArmure(1);
                 break;
             case 2: // Boost Soins
-                // Supposons que toutes les cartes peuvent être soignées
+                // Supposons que toutes les cartes peuvent Ãªtre soignÃ©es
                 carte.soigner(1);
                 break;
         }
@@ -110,6 +115,8 @@ public class Carte {
     	this.degatsAttaque += i;
     	
     }
+    
+    
     
     private void boostArmure(int i) {
     	
@@ -122,11 +129,12 @@ public class Carte {
     }
 	
     public boolean peutRecevoirAttaque() {
-	// je verifie car si j'ai posé une carte de protection qui elle n'a pas pour but d'attaquer je ne vais pas lui donner 1 d'attaque
+	// je verifie car si j'ai posÃ© une carte de protection qui elle n'a pas pour but d'attaquer je ne vais pas lui donner 1 d'attaque
         return this.degatsAttaque > 0 || this.type.equals("Classique");
     }
 	
 
+    
     public int getId() {
         return id;
     }
@@ -154,6 +162,8 @@ public class Carte {
     public String getType() {
         return type;
     }
+    
+    
 
     @Override
     public String toString() {
