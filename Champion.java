@@ -86,7 +86,12 @@ public abstract class Champion implements ActionDeJeu {
     
     }
     
-   
+    public void afficherDeck() {
+        System.out.println("Deck de " + nom + ":\n");
+        for (Carte carte : deck) {
+            System.out.println(carte);
+        }
+    }
 
     
     
@@ -96,6 +101,9 @@ public abstract class Champion implements ActionDeJeu {
         this.manaMaximum += 1; 
         this.manaActuel = this.manaMaximum; 
     }
+    
+    
+    
 
     public boolean utiliserMana(int quantite) {
         if (this.manaActuel >= quantite) {
@@ -104,9 +112,14 @@ public abstract class Champion implements ActionDeJeu {
         } 
         return false;
     }
+    
+    
+    
     public int getManaActuel() {
         return manaActuel;
     }
+    
+    
 
     public void addArmure(int armureAjoutee) {
         this.armure += armureAjoutee;
