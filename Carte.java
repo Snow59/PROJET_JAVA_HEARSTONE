@@ -29,13 +29,14 @@ public class Carte {
 
     public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau , List<Carte> cartesEnJeu , List<Carte> carteEnJeuJoueur, List<Carte> cartesEnJeuAdversaire) {
         Random random = new Random();
-        System.out.println("Carte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
-        System.out.println("Carte sur le plateau du cible "+cible.getNom()+" :  "+cartesEnJeuAdversaire);
+        System.out.println("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
+        System.out.println("\nCarte sur le plateau du cible "+cible.getNom()+" :  "+cartesEnJeuAdversaire);
 
         switch (type) {
             case "Classique":
                 // Les monstres classiques attaquent directement l'ennemi pas les cartes 
-                cible.subirDegats(degatsAttaque);
+                cible.subirDegats(invocateur.getPuissanceAttaque());
+                invocateur.utiliserMana(this.coutMana);
                 break;
             case "Protecteur":
             	
