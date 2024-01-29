@@ -30,7 +30,7 @@ public class Mage extends Champion {
         cible.subirDegats(2);
     });
 
-    // Constructeur privé pour empêcher la création d'instances en dehors de la classe
+    // Constructeur privÃ© pour empÃªcher la crÃ©ation d'instances en dehors de la classe
     private Mage(String nom, int pointsDeVie, int puissanceAttaque, Consumer<Champion> capaciteSpeciale) {
         super(nom, pointsDeVie, puissanceAttaque, 3); // '3' est un exemple pour le mana initial
         this.capaciteSpeciale = capaciteSpeciale;
@@ -42,7 +42,7 @@ public class Mage extends Champion {
     public void attaquer(Champion cible) {
         if (cible != null) {
             cible.subirDegats(this.getPuissanceAttaque());
-            System.out.println(this.getNom() + " attaque " + cible.getNom() + " infligeant " + this.getPuissanceAttaque() + " dégâts.");
+            System.out.println(this.getNom() + " attaque " + cible.getNom() + " infligeant " + this.getPuissanceAttaque() + " dÃ©gÃ¢ts.");
         }
     }
 
@@ -50,13 +50,13 @@ public class Mage extends Champion {
 	public void special(Champion cible) {
 	    if (this == JAINA) {
 	        cible.subirDegats(5);
-	        System.out.println("Jaina utilise sa capacité spéciale sur " + cible.getNom() + " infligeant 5 dégâts.");
+	        System.out.println("Jaina utilise sa capacitÃ© spÃ©ciale sur " + cible.getNom() + " infligeant 5 dÃ©gÃ¢ts.");
 	    } else if (this == MEDIVH) {
 	        this.addArmure(5);
-	        System.out.println("Medivh utilise sa capacité spéciale et gagne 5 points d'armure.");
+	        System.out.println("Medivh utilise sa capacitÃ© spÃ©ciale et gagne 5 points d'armure.");
 	    } else if (this == KHADGAR) {
 	        cible.subirDegats(2);
-	        System.out.println("Khadgar utilise sa capacité spéciale sur " + cible.getNom() + " infligeant 2 dégâts.");
+	        System.out.println("Khadgar utilise sa capacitÃ© spÃ©ciale sur " + cible.getNom() + " infligeant 2 dÃ©gÃ¢ts.");
 	    }
 	}
 
