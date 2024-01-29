@@ -1,13 +1,14 @@
 package IMT_HearStone;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Classe abstraite Champion.
- * En faisant de Champion une classe abstraite, une structure solide est établie pour le jeu,
- * forçant les sous-classes (Mage, Paladin, etc.) à implémenter des comportements spécifiques
- * tout en réutilisant le code commun. Cela facilite l'ajout de nouveaux types de champions à l'avenir.
- * Les variables sont protégées pour des raisons de sécurité afin d'éviter des modifications non autorisées.
+ * En faisant de Champion une classe abstraite, une structure solide est Ã©tablie pour le jeu,
+ * forÃ§ant les sous-classes (Mage, Paladin, etc.) Ã  implÃ©menter des comportements spÃ©cifiques
+ * tout en rÃ©utilisant le code commun. Cela facilite l'ajout de nouveaux types de champions Ã  l'avenir.
+ * Les variables sont protÃ©gÃ©es pour des raisons de sÃ©curitÃ© afin d'Ã©viter des modifications non autorisÃ©es.
  */
 public abstract class Champion implements ActionDeJeu {
     protected String nom;
@@ -24,9 +25,9 @@ public abstract class Champion implements ActionDeJeu {
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
         this.puissanceAttaque = puissanceAttaque;
-        this.manaActuel = 3; // Démarre avec 3 points de mana 
+        this.manaActuel = 3; // DÃ©marre avec 3 points de mana 
         this.manaMaximum = 3;
-        //je ne fais pas this.mana = mana , pour evité que qql ne créé un champion avec mana illimité lol
+        //je ne fais pas this.mana = mana , pour evitÃ© que qql ne crÃ©Ã© un champion avec mana illimitÃ© lol
 
     }
 
@@ -48,10 +49,10 @@ public abstract class Champion implements ActionDeJeu {
         this.pointsDeVie -= degats;
         if (this.pointsDeVie < 0) {
             this.pointsDeVie = 0;
-            System.out.println("La partie est terminée car " + this.nom + " est maintenant mort.");
+            System.out.println("La partie est terminÃ©e car " + this.nom + " est maintenant mort.");
             
         }
-        System.out.println(this.nom + " a subis " + degats + " points de dégats, sa vie est  mtn de : " + pointsDeVie );
+        System.out.println(this.nom + " a subis " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
     }
 
     public String getNom() {
@@ -59,19 +60,34 @@ public abstract class Champion implements ActionDeJeu {
     }
     
     
-    public void setDeck(List<Carte> deck) {
-        this.deck = deck;
+    
+    
+    
+    
+    public void setDeck(List<Carte> deck) { 
+    	this.deck = deck;
     }
     
-    public void getDeck() {
+    
+    
+    
+    
+    public List<Carte> getDeck() {
     	
-    	System.out.println("Deck de "+this.getNom());
+    	List<Carte> liste = new ArrayList();
     	for (Carte carte : deck) {
-            System.out.println(carte);
-        }
-    	System.out.println("\n");
-        
+    		
+    		 liste.add(carte);
+    		 
+    		
+    	}
+    	
+    	return liste;
+    
     }
+    
+   
+
     
     
     
