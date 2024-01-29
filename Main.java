@@ -5,8 +5,8 @@ import HearStoneClasseChampion.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Création des Mages
-    	
+    	//System.out.println("Yahiani Hamza & Boubeker Ibrahim"); <-- fait le mettre pour identifier notre groupe
+        // CrÃ©ation des Mages
         Mage jaina = Mage.JAINA;
         Mage medivh = Mage.MEDIVH;
        
@@ -14,8 +14,9 @@ public class Main {
         Deck.associerDeck(jaina);
         Deck.associerDeck(medivh);
         
-        jaina.getDeck();
-        medivh.getDeck();
+        System.out.println("Deck de jaina "+jaina.getDeck());
+        System.out.println("Deck de medivh"+ medivh.getDeck());
+
                
         
         PlateauDeJeu plateau = new PlateauDeJeu(jaina, medivh);
@@ -23,6 +24,8 @@ public class Main {
         Monitor MaitreDeLaPartie = new Monitor(jaina , medivh);
         	
         MaitreDeLaPartie.jouerTour(jaina);
+        //MaitreDeLaPartie.jouerTour(medivh);
+
         
             
     }
