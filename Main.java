@@ -10,7 +10,7 @@ public class Main {
 
     
     public static void main(String[] args) {
-    	//System.out.println("Yahiani Hamza & Boubeker Ibrahim"); <-- fait le mettre pour identifier notre groupe
+    	System.out.println("Yahiani Hamza & Boubeker Ibrahim");
         // CrÃ©ation des Mages
     	
         Mage jaina = Mage.JAINA;
