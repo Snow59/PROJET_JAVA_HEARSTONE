@@ -6,17 +6,23 @@ import java.util.function.Consumer;
 import IMT_HearStone.*;
 
 import java.util.Scanner;
-
+/**
+ * Classe permettant de creer les mages et leurs methodes
+ */
 public class Mage extends Champion {
     private Consumer<Champion> capaciteSpeciale;
     private List<Carte> main = new ArrayList<>();
     private Deck deck;
     
-
+/**
+ * creer un mage JAINA
+ */
     public static final Mage JAINA = new Mage("Jaina", 30, 1, cible -> {
         cible.subirDegats(5);
     });
-    
+    /**
+     * Creer un mage MEDIVH
+     */
     public static final Mage MEDIVH;
 
     static {
@@ -25,7 +31,9 @@ public class Mage extends Champion {
             MEDIVH.addArmure(5);
         };
     }
-
+    /**
+     * Creer un mage KHADGAR
+     */
     public static final Mage KHADGAR = new Mage("Khadgar", 30, 1, cible -> {
         cible.subirDegats(2);
     });
@@ -39,7 +47,9 @@ public class Mage extends Champion {
     }
 
     
-    
+    /**
+     * Ici on defini tous les attaques spéciales de chaques personnages
+     */
 	@Override
 	public void special(Champion cible) {
 	    if (this == JAINA) {
