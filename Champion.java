@@ -55,8 +55,8 @@ public abstract class Champion implements ActionDeJeu {
         }
     }
     /**
-     * Cette methode  est utiliser pour diminuer les PV du champion
-     * @param degats : nombre de degats subis par le champion
+     * Cette methode  est utilisée pour diminuer les PV du champion
+     * @param degats : nombre de degats subi par le champion
      */
     public void subirDegats(int degats) {
     	if (this.armure > 0){
@@ -71,7 +71,7 @@ public abstract class Champion implements ActionDeJeu {
     	            System.out.println("La partie est terminÃ©e car " + this.nom + " est maintenant mort.");
     	            
     	        }
-    	        System.out.println(this.nom + " a subis " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
+    	        System.out.println(this.nom + " a subi " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
     	    
     		
     	}
