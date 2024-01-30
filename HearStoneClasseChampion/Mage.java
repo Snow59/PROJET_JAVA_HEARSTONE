@@ -40,7 +40,7 @@ public class Mage extends Champion {
     
 
     // Constructeur privÃ© pour empÃªcher la crÃ©ation d'instances en dehors de la classe
-    private Mage(String nom, int pointsDeVie, int puissanceAttaque, Consumer<Champion> capaciteSpeciale) {
+    public Mage(String nom, int pointsDeVie, int puissanceAttaque, Consumer<Champion> capaciteSpeciale) {
         super(nom, pointsDeVie, puissanceAttaque, 3); // '3' est un exemple pour le mana initial
         this.capaciteSpeciale = capaciteSpeciale;
         this.deck = new Deck(); // Vous pouvez ajuster cette partie en fonction de la logique de votre jeu
