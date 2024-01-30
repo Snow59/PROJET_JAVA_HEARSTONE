@@ -44,10 +44,11 @@ public abstract class Champion implements ActionDeJeu {
     
     
     public void soigner(int i) {
-    	
-    	this.pointsDeVie += i;
+        while (i > 0 && this.pointsDeVie < 30) {
+            this.pointsDeVie += 1;
+            i -= 1; // Decrement i by 1
+        }
     }
-    
     
     public void subirDegats(int degats) {
     	if (this.armure > 0){
@@ -67,7 +68,10 @@ public abstract class Champion implements ActionDeJeu {
     		
     	}
     }
+    
+    
 
+    
     public String getNom() {
         return nom;
     }
@@ -135,7 +139,15 @@ public abstract class Champion implements ActionDeJeu {
     
     
     
-    public int getArmure() {
+    public void setArmure(int degat) {
+    	
+    		this.armure -= degat;
+    	
+    	
+	}
+
+
+	public int getArmure() {
 		return armure;
 	}
 
