@@ -16,8 +16,9 @@ public class Carte {
     private int addArmure;
     private int restoreHealth;
     private final String type; // "Classique", "Protecteur", "Soigneur", "Mascotte"
+    private int vie;
 
-    public Carte(String nom, int coutMana, int degatsAttaque, int addArmure, int restoreHealth, String type) {
+    public Carte(String nom, int vie, int coutMana, int degatsAttaque, int addArmure, int restoreHealth, String type) {
         this.id = compteurId++;
         this.nom = nom;
         this.coutMana = coutMana;
@@ -25,16 +26,24 @@ public class Carte {
         this.addArmure = addArmure;
         this.restoreHealth = restoreHealth;
         this.type = type;
+        this.vie = vie;
     }
 
     public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau , List<Carte> cartesEnJeu , List<Carte> carteEnJeuJoueur, List<Carte> cartesEnJeuAdversaire) {
         Random random = new Random();
         System.out.println("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
-        System.out.println("\nCarte sur le plateau du cible "+cible.getNom()+" :  "+cartesEnJeuAdversaire);
+//        System.out.println("\nCarte sur le plateau du cible "+cible.getNom()+" :  "+cartesEnJeuAdversaire);
 
         switch (type) {
             case "Classique":
                 // Les monstres classiques attaquent directement l'ennemi pas les cartes 
+            	if (plateau.isProtected()){
+            		
+            		
+            	}
+            	if (cible.getArmure() > 0) {
+            		//cible.set
+            	}
                 cible.subirDegats(this.getDegatsAttaque());
                 invocateur.utiliserMana(this.coutMana);
                 break;
@@ -45,17 +54,10 @@ public class Carte {
                 plateau.ajouterProtecteur(this);
                 break;
             case "Soigneur":
-            	
-            	int cibleeffet = random.nextInt(2);
-            	
-                // Les soigneurs peuvent soigner un alliÃ© ou un ennemi.
-                if (cibleeffet == 0) {
-                    
-                	invocateur.soigner(restoreHealth);
-                } else {
-                    cible.soigner(restoreHealth);
-                }
-		
+            		
+                	invocateur.soigner(this.getRestoreHealth());
+                	System.out.println("La vie de "+invocateur.getPointsDeVie());
+               
                 break;
             case "Mascotte":
             	System.out.println("Je suis une macostte");
@@ -83,6 +85,44 @@ public class Carte {
                 break;
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    public void actionClassique(Carte carteQuiAttaque, Carte cartesEnJeuAdversaire) {
+        Random random = new Random();
+        
+    //    System.out.println("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
+    //    System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subit  "+carteQuiAttaque.getDegatsAttaque());
+        
+        
+        if (type == "Classique") {
+        	
+        	System.out.println(cartesEnJeuAdversaire);
+        	System.out.println("PUISSANCE DATTAQUE CARTE QUI ATTAQUE : "+carteQuiAttaque.getDegatsAttaque());
+        	cartesEnJeuAdversaire.subirDegatsCarte(cartesEnJeuAdversaire, carteQuiAttaque.getDegatsAttaque());
+        	System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subit  "+carteQuiAttaque.getDegatsAttaque()+" de dégat d'attaque");
+            
+        	
+        }
+        else {
+        	
+        	System.out.println("Je ne peux pas utiliser cette carte sur une cible ennemi");
+        }
+        
+    }
+    
+    
+    
+    public void subirDegatsCarte(Carte cible ,int degats) {
+    	
+    	cible.vie -=degats;
+    	
+    }
+    
     
     
    
@@ -119,7 +159,15 @@ public class Carte {
     
     
     
-    private void boostArmure(int i) {
+    public int getVie() {
+		return vie;
+	}
+
+	public void setVie(int vie) {
+		this.vie = vie;
+	}
+
+	private void boostArmure(int i) {
     	
     	this.addArmure += i;
     }
@@ -169,7 +217,8 @@ public class Carte {
     @Override
     public String toString() {
         return "Carte{" +
-               "id=" + id +
+               " id=" + id +
+               " vie="+vie+
                ", nom='" + nom + '\'' +
                ", coutMana=" + coutMana +
                ", degatsAttaque=" + degatsAttaque +
