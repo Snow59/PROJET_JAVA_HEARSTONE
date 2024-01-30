@@ -28,66 +28,53 @@ public class PlateauDeJeu extends Deck{
 
     public void jouerCarte(Champion champion, Carte carte) {
     	
-        //if (champion.utiliserMana(carte.getCoutMana())) {
+        	System.out.println(carte);
         	if (champion == joueur) {
             	
-            	if (carte.getType() == "Mascotte"){
-            		
-            		System.out.println("Une carte de type boost Mascotte a été posée");
-            	}
-            	else {
-            		
-            			
-            			joueurCarteEnJeu.add(carte);
-
-                    	List<Carte> DeckMoinsCarte = joueur.getDeck();
-                    	DeckMoinsCarte.remove(carte);
-                    	
-                    	joueur.setDeck(DeckMoinsCarte);
-                    	joueur.afficherDeck();
-         
-            			}
-      			carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
+	            	if (carte.getType() == "Mascotte"){
+	            		
+	            		System.out.println("Une carte de type boost Mascotte a été posée");
+	            	}
+	            	else {
+	            		
+	            			
+	            			joueurCarteEnJeu.add(carte);
+	
+	                    	List<Carte> DeckMoinsCarte = joueur.getDeck();
+	                    	DeckMoinsCarte.remove(carte);
+	                    	
+	                    	joueur.setDeck(DeckMoinsCarte);
+	                    	joueur.afficherDeck();
+	         
+	            			}
+	      			carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
 
         	}
-            	//joueur.getDeck().remove(index)
-                //carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
-                
         	
         	else if(champion == adversaire){
-        		//System.out.println(adversaire.getManaActuel());
-            	//System.out.println(adversaire.getNom());
-        		if (carte.getType() == "Mascotte"){
-            		
-            		System.out.println("Une carte de type boost Mascotte a été posée");
-            		adversaireCarteEnJeu.add(carte);
-
-            	}
-            	else {
-            		
-            		adversaireCarteEnJeu.add(carte);
-            		List<Carte> DeckMoinsCarte = adversaire.getDeck();
-                	DeckMoinsCarte.remove(carte);
-                	
-                	adversaire.setDeck(DeckMoinsCarte);
-                	adversaire.afficherDeck();
-
-            	}
-                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
+  
+	        		if (carte.getType() == "Mascotte"){
+	            		
+	            		System.out.println("Une carte de type boost Mascotte a été posée");
+	            		adversaireCarteEnJeu.add(carte);
+	
+	            	}
+	            	else {
+	            		
+	            		adversaireCarteEnJeu.add(carte);
+	            		List<Carte> DeckMoinsCarte = adversaire.getDeck();
+	                	DeckMoinsCarte.remove(carte);
+	                	
+	                	adversaire.setDeck(DeckMoinsCarte);
+	                	adversaire.afficherDeck();
+	
+	            	}
+	                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
 		
         	}
-			
-        	
-        	//carteSurLePlateau.add(carte);
-        	
+        	carteSurLePlateau.add(carte);
+		        	
         }
-//        else {
-//        	System.out.println("Pas assez de mana");
-//        }
-    //}
-
-    
-    
     
     public boolean isCartePlateauPlayer(Champion player){
     	
@@ -117,9 +104,31 @@ public class PlateauDeJeu extends Deck{
     
     
     
+    
+    
+    public List<Carte>  PlateauPlayer(Champion player){
+    	
+    	if (player ==joueur) {
+    		
+    		return joueurCarteEnJeu;
+    	}
+    	else {
+    		
+    		return adversaireCarteEnJeu;
+    	}
+     
+    }
+    
+    
+    
+    
+    
+    
     public List<Carte> getMainJoueur() {
         return mainJoueur;
     }
+    
+    
 
     public List<Carte> getMainAdversaire() {
         return mainAdversaire;
