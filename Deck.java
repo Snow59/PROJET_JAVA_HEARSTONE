@@ -83,6 +83,18 @@ public class Deck{
     		
 		return null;
     }
+    
+    public static boolean checkmana(Champion champion, Carte carte) {
+    	
+    	if (champion.getManaActuel() >= carte.getCoutMana())
+    	{
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    	
+    }
 
 	public static Carte piocherCarte() {
 		
@@ -91,14 +103,10 @@ public class Deck{
 	        int index = random.nextInt(creerDeck().size()); // Sélectionne un indice aléatoire
 	        return creerDeck().get(index);
 			
-			
-    
-    
 		}
 }
     
    
     
-
 
 
