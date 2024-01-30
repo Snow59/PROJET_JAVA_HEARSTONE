@@ -10,7 +10,7 @@ import java.util.Collections;
 
 // Donc dans cette classe Deck j'ai voulu sur les centaines de cartes que possÃ¨de le jeux , en y ajouter 20.
 // Elles seront distribuÃ©es alÃ©atoirement aux champions en dÃ©but de game.
-// Biensur ce sont des cartes qui existent vraiment
+// Bie nsur ce sont des cartes qui existent vraiment
 
 //Pour rappel le constructeur Carte se construit comme Ã§a : Carte(Nom, CoÃ»tMana, DÃ©gatattaque , Armure, VieRendu, TypeDeCarte)
 
