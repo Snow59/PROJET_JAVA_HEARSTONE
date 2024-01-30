@@ -53,8 +53,8 @@ public class Carte {
                 break;
             case "Protecteur":
             	
-                // Les protecteurs offrent une protection font office de tank ( comme Cho'Gath ) ils vont tank les degats dans leur armures 
-            	// Ils seront biensur Ã©levÃ© en mana car trÃ¨s utile.
+                // Les protecteurs offrent une protection, Il font office de tank ( comme Cho'Gath ) ils vont tank les degats dans leur armures 
+            	// Ils seront bien sur élevé en mana car très utile.
                 plateau.ajouterProtecteur(this);
                 break;
             case "Soigneur":
@@ -83,10 +83,10 @@ public class Carte {
         int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte PosÃ©e
 /**		
  * 
-*La mascotte a Ã©tÃ© complexe et long Ã  faire mais le principe c'est  quand on invoque cette carte 
+*La mascotte a été complexe et long Ã  faire mais le principe c'est  quand on invoque cette carte 
 	* qui ne coutera que 1 de mana , elle fait qql chose de totalement alÃ©atoire !
-* elle choisit entre notre champion , l'une de nos carte dÃ©ja posÃ©s
-	* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
+* elle choisit entre notre champion , l'une de nos cartes dÃ©ja posÃ©s
+	* Ensuite elle choisit, soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
 */
 
         
@@ -115,14 +115,14 @@ public class Carte {
         Random random = new Random();
         
     //    System.out.println("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
-    //    System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subit  "+carteQuiAttaque.getDegatsAttaque());
+    //    System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subi  "+carteQuiAttaque.getDegatsAttaque());
         
         
         if (type == "Classique") {
         	
         	System.out.println("PUISSANCE DATTAQUE CARTE QUI ATTAQUE : "+carteQuiAttaque.getDegatsAttaque());
         	cartesEnJeuAdversaire.subirDegatsCarte(cartesEnJeuAdversaire, carteQuiAttaque.getDegatsAttaque());
-        	System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subit  "+carteQuiAttaque.getDegatsAttaque()+" de dégat d'attaque");
+        	System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subi  "+carteQuiAttaque.getDegatsAttaque()+" de dégat d'attaque");
             
         	
         }
