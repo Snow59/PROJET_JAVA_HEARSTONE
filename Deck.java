@@ -19,7 +19,10 @@ public class Deck{
 	
 
 	private List<Carte> cartes;
-	
+    /**
+     * Cette fonction initialise toutes les cartes possibles
+     * @return deck
+     */
     public static List<Carte> creerDeck() {
         List<Carte> deck = new ArrayList<>();
         
@@ -59,7 +62,10 @@ public class Deck{
 
         return deck;
     }
-    
+    /**
+     * Cette methode  permet d'initialiser une main avec 5 des cartes aléatoires.
+     * @param champion
+     */
     public static void associerDeck(Champion champion) {
         List<Carte> deckInitial = creerDeck(); // CrÃ©e un nouveau deck avec toutes les cartes
         melangerDeck(deckInitial); // MÃ©lange le deck
@@ -68,7 +74,10 @@ public class Deck{
     }
 
      
-
+    /**
+     * Permet de  mélanger le deck d'un joueur.
+     * @param carte
+     */
     public static void melangerDeck(List<Carte> carte) {
         Collections.shuffle(carte); 
     }
@@ -86,7 +95,13 @@ public class Deck{
     
     
     
-    
+    /**
+     * Permet de faire ne sorte qu'on n'utilise pas de carte 
+     * si nous ne disposons pas assez de mana
+     * @param champion
+     * @param carte
+     * @return boolean
+     */
     public static boolean checkmana(Champion champion, Carte carte) {
     	
     	if (champion.getManaActuel() >= carte.getCoutMana())
@@ -98,7 +113,10 @@ public class Deck{
     	}
     	
     }
-
+    /**
+     * Permet  d'ajouter une carte a la main du champion
+     * @return 
+     */
 	public static Carte piocherCarte() {
 		
 		
