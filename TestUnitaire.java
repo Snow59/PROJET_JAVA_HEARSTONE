@@ -14,28 +14,34 @@ import IMT_HearStone.Monitor;
 import IMT_HearStone.PlateauDeJeu;
 
 public class TestUnitaire {
+/*
+     * assertEquals(,)
+     * assertNotEquals(,)
+     * assertNotNull()
+     * assertNull()
+     * assertTrue()
+     */
 
+	
     /**
      * Simuler l’attaque d’un Champion sur un autre avec des points
      * d’attaque égaux aux points de vie du Champion adverse
      * Vérifier que ce dernier ait bien 0 points de vie.
      */
-//    @Test
-//    public void testAttaqueMortChampion() {
-//        Mage tueur = new Mage("Assassin", 1, 30, null);
-//        Mage cible = new Mage("Petit chat Fragile", 30, 1, null);
-//        tueur.attaquer(cible);
-//        
-//        assertEquals(0, cible.getPointsDeVie());
-//    }
+    @Test
+    public void testAttaqueMortChampion() {
+        Mage tueur = new Mage("Assassin", 1, 30, null);
+        Mage cible = new Mage("Petit chat Fragile", 30, 1, null);
+        tueur.attaquer(cible);
+        
+        assertEquals(0, cible.getPointsDeVie());
+    }
 
     /**
      * Simuler l’attaque d’un monstre sur un autre avec des points
      * d’attaque égaux aux points de vie du monstre attaqué.
      * Vérifier que ce dernier ait bien 0 points de vie et disparait du plateau.
      */
-	
-	
     @Test
     public void testAttaqueMortCarte(){
         Mage tueur = new Mage("Assassin", 1, 30, null);
@@ -70,12 +76,6 @@ public class TestUnitaire {
         
 
     }
-/*
-     * assertEquals(,)
-     * assertNotEquals(,)
-     * assertNotNull()
-     * assertNull()
-     * assertTrue()
-     */
+
 
 }
