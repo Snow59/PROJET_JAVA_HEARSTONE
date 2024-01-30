@@ -25,18 +25,22 @@ public abstract class Champion implements ActionDeJeu {
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
         this.puissanceAttaque = puissanceAttaque;
-        this.manaActuel = 3; // DÃ©marre avec 3 points de mana 
-        this.manaMaximum = 3;
+        this.manaActuel = 8; // DÃ©marre avec 3 points de mana 
+        this.manaMaximum = 8;
         //je ne fais pas this.mana = mana , pour evitÃ© que qql ne crÃ©Ã© un champion avec mana illimitÃ© lol
 
     }
 
 
-    @Override
     public void attaquer(Champion cible) {
-        cible.subirDegats(puissanceAttaque);
+        if (cible != null) {
+            cible.subirDegats(this.getPuissanceAttaque());
+            System.out.println(this.getNom() + " attaque " + cible.getNom() + " infligeant " + this.getPuissanceAttaque() + " dÃ©gÃ¢ts.");
+        }
     }
 
+    
+    
     
     
     public void soigner(int i) {
@@ -46,13 +50,22 @@ public abstract class Champion implements ActionDeJeu {
     
     
     public void subirDegats(int degats) {
-        this.pointsDeVie -= degats;
-        if (this.pointsDeVie < 0) {
-            this.pointsDeVie = 0;
-            System.out.println("La partie est terminÃ©e car " + this.nom + " est maintenant mort.");
-            
-        }
-        System.out.println(this.nom + " a subis " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
+    	if (this.armure > 0){
+    		
+    		this.armure -=degats;
+    	}
+    	else {
+    		
+    		 this.pointsDeVie -= degats;
+    	        if (this.pointsDeVie < 0) {
+    	            this.pointsDeVie = 0;
+    	            System.out.println("La partie est terminÃ©e car " + this.nom + " est maintenant mort.");
+    	            
+    	        }
+    	        System.out.println(this.nom + " a subis " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
+    	    
+    		
+    	}
     }
 
     public String getNom() {
@@ -120,8 +133,14 @@ public abstract class Champion implements ActionDeJeu {
     }
     
     
+    
+    
+    public int getArmure() {
+		return armure;
+	}
 
-    public void addArmure(int armureAjoutee) {
+
+	public void addArmure(int armureAjoutee) {
         this.armure += armureAjoutee;
     }
 
