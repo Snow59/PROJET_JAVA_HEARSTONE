@@ -29,6 +29,7 @@ public class Mage extends Champion {
     public static final Mage KHADGAR = new Mage("Khadgar", 30, 1, cible -> {
         cible.subirDegats(2);
     });
+    
 
     // Constructeur privÃ© pour empÃªcher la crÃ©ation d'instances en dehors de la classe
     private Mage(String nom, int pointsDeVie, int puissanceAttaque, Consumer<Champion> capaciteSpeciale) {
@@ -38,14 +39,7 @@ public class Mage extends Champion {
     }
 
     
-    @Override
-    public void attaquer(Champion cible) {
-        if (cible != null) {
-            cible.subirDegats(this.getPuissanceAttaque());
-            System.out.println(this.getNom() + " attaque " + cible.getNom() + " infligeant " + this.getPuissanceAttaque() + " dÃ©gÃ¢ts.");
-        }
-    }
-
+    
 	@Override
 	public void special(Champion cible) {
 	    if (this == JAINA) {
