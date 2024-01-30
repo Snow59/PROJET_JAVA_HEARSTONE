@@ -3,7 +3,9 @@ package IMT_HearStone;
 
 import java.util.Random;
 import java.util.List;
-
+/**
+ * Ici nous définissons ce qu'est une carte
+ */
 public class Carte {
 
 	
@@ -28,7 +30,16 @@ public class Carte {
         this.type = type;
         this.vie = vie;
     }
-
+    /**
+     * Cette fonction attribut les capacités à chacune des cartes
+     * 
+     * @param invocateur
+     * @param cible
+     * @param plateau
+     * @param cartesEnJeu
+     * @param carteEnJeuJoueur
+     * @param cartesEnJeuAdversaire
+     */
     public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau , List<Carte> cartesEnJeu , List<Carte> carteEnJeuJoueur, List<Carte> cartesEnJeuAdversaire) {
         Random random = new Random();
         System.out.println("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
@@ -94,7 +105,12 @@ public class Carte {
     	
     
     
-    
+    /**
+     * Cette methode fait attaquer 2 cartes entre elles
+     * 
+     * @param carteQuiAttaque
+     * @param cartesEnJeuAdversaire
+     */  
     public void actionClassique(Carte carteQuiAttaque, Carte cartesEnJeuAdversaire) {
         Random random = new Random();
         
@@ -118,7 +134,12 @@ public class Carte {
     }
     
     
-    
+    /**
+     * cette methode permet de réduire les pv d'une carte une fois qu'elle
+     * s'est faite attaquer
+     * @param cible
+     * @param degats
+     */
     public void subirDegatsCarte(Carte cible ,int degats) {
     	
     	cible.vie -=degats;
@@ -127,14 +148,21 @@ public class Carte {
     
     
     
-   
+    /**
+     * permet d'augmenter la puissance d'attaque de 1
+     * @param champion
+     */
    private void appliquerEffetMascotteChampion(Champion champion) {
 	   
 	   champion.setPuissanceAttaque(1);
    }
    
    
-   
+    /**
+     * Permet de gerer les effets boost des differentes mascotte
+     * @param carte
+     * @param effet
+     */
    private void appliquerEffetMascotte(Carte carte, int effet) {
         switch (effet) {
             case 0: // Boost Attaque
@@ -152,7 +180,9 @@ public class Carte {
                 break;
         }
     }
-   
+    /**
+     * Permet de booster l'attaque de la carte
+     */
     private void boostAttaque(int i) {
     	
     	this.degatsAttaque += i;
@@ -182,17 +212,25 @@ public class Carte {
 	public void setVie(int vie) {
 		this.vie = vie;
 	}
-
+    /**
+     * Permet de booster l'armure de la carte
+     */
 	private void boostArmure(int i) {
     	
     	this.addArmure += i;
     }
-    
+    /**
+     * Permet d'augmenter la vie de la carte de 1
+     */
     private void soigner(int i) {
     	
     	this.restoreHealth += i;
     }
-	
+    /**
+     * Permet de faire en sorte que les cartes qui ne peuvent pas attaquer,
+     * elles n'ont pas la possibilité de recevoir des points d'attaque
+     * @return
+     */
     public boolean peutRecevoirAttaque() {
 	// je verifie car si j'ai posÃ© une carte de protection qui elle n'a pas pour but d'attaquer je ne vais pas lui donner 1 d'attaque
         return this.degatsAttaque > 0 || this.type.equals("Classique");
