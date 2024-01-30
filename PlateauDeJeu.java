@@ -30,7 +30,7 @@ public class PlateauDeJeu extends Deck{
 	 * permet de mettre en place  la gestion des cartes dans le jeu
 	 */
     public void jouerCarte(Champion champion, Carte carte) {
-    	
+
         	
         	//System.out.println("CARTE PLATEAU ALLIEE"+carte);
         	
@@ -152,7 +152,6 @@ public class PlateauDeJeu extends Deck{
 		        	}
 
         	}
-        	
         	else{
         		if (champion == joueur)
         		{
@@ -175,10 +174,9 @@ public class PlateauDeJeu extends Deck{
                     	DeckMoinsCarte.remove(carteAdv);
                     	adversaireCarteEnJeu = DeckMoinsCarte;
                     	//System.out.println(adversaireCarteEnJeu);
-                    	System.out.println("LES NOUVELLES CARTES EN JEUX DE : " + adversaire.getNom()+" -> " +adversaireCarteEnJeu);
+                    	System.out.println("Les nouvelles cartes en jeu de : " + adversaire.getNom()+" -> " +adversaireCarteEnJeu);
 
-	        		}
-	        		
+	        		}	
 	        		
         		}
 	        		
@@ -201,7 +199,7 @@ public class PlateauDeJeu extends Deck{
 	        			List<Carte> DeckMoinsCarte1 = PlateauPlayer(joueur); 
                     	DeckMoinsCarte1.remove(carteAdv1);
                     	joueurCarteEnJeu = DeckMoinsCarte1;
-                    	System.out.println("LES NOUVELLES CARTES EN JEUX DE : " +joueur.getNom()+" ->" +joueurCarteEnJeu);
+                    	System.out.println("Les nouvelles cartes en jeu de : " +joueur.getNom()+" ->" +joueurCarteEnJeu);
 	        		}
 	        		
 	        		
@@ -216,7 +214,6 @@ public class PlateauDeJeu extends Deck{
     
     
     public boolean isCartePlateauPlayer(Champion player){
-    	
     	
     	
     	if(player == joueur) {
@@ -242,10 +239,6 @@ public class PlateauDeJeu extends Deck{
     }
     
    
-    
-
-    
-    
     public List<Carte>  PlateauPlayer(Champion player){
     	
     	if (player ==joueur) {
@@ -272,20 +265,13 @@ public class PlateauDeJeu extends Deck{
     	}
     }
     
-    
-    
     public List<Carte> getMainJoueur() {
         return mainJoueur;
     }
-    
-    
 
     public List<Carte> getMainAdversaire() {
         return mainAdversaire;
     }
-    
-    
-    
     
     public boolean isProtected() {
     	if (protecteur == true) {
@@ -298,7 +284,6 @@ public class PlateauDeJeu extends Deck{
     }
     
     boolean protecteur = false;
-    
     
     public void ajouterProtecteur(Carte carte) 
     {
