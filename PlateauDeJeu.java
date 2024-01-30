@@ -34,7 +34,7 @@ public class PlateauDeJeu extends Deck{
         	
         	CheckChampion(champion);
         	
-        	if((isCartePlateauPlayer(champion) == true) || (carte.getType() != ("Classique"))){
+        	if((isCartePlateauPlayer(champion)|| (carte.getType() != ("Classique") ))){
         			
         			
 		        	if (champion == joueur) {
@@ -44,6 +44,14 @@ public class PlateauDeJeu extends Deck{
 			            	if (carte.getType() == "Mascotte"){
 			            		
 			            		System.out.println("Une carte de type boost Mascotte a été posée");
+			            		
+			            		List<Carte> plateauAllie = PlateauPlayer(joueur); // Je recupere le plateau adverse et je prend une carte au hasard dedans
+				        		
+				        		Random random = new Random();
+				        	    int alea = random.nextInt(plateauAllie.size()); // Cho
+
+				        	    Carte carteAdv  = Monitor.getCartePlateauAtt(plateauAllie, alea);
+			            		carte.carteMascotte(carte, joueur);
 			            	}
 			            	
 			            	else if(carte.getType() == "Soigneur")
@@ -68,8 +76,8 @@ public class PlateauDeJeu extends Deck{
 		                    	//joueur.afficherDeck();
 		         
 		            			
-			            		carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
-			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            		//carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
+			            		//joueurCarteEnJeu.add(carte);
 			            		
 			            	}
 			            	else {
@@ -93,7 +101,13 @@ public class PlateauDeJeu extends Deck{
 			        		if (carte.getType() == "Mascotte"){
 			            		
 			            		System.out.println("Une carte de type boost Mascotte a été posée");
-			            		adversaireCarteEnJeu.add(carte);
+			            		List<Carte> plateauAdversaire = PlateauPlayer(adversaire); // Je recupere le plateau adverse et je prend une carte au hasard dedans
+				        		
+				        		Random random = new Random();
+				        	    int alea = random.nextInt(plateauAdversaire.size()); // Cho
+
+				        	    Carte carteAdv  = Monitor.getCartePlateauAtt(plateauAdversaire, alea);
+			            		carte.carteMascotte(carte, adversaire);
 			
 			            	}
 			        		else if(carte.getType() == "Soigneur")
@@ -117,8 +131,8 @@ public class PlateauDeJeu extends Deck{
 		                    	//joueur.afficherDeck();
 		         
 		            			
-				                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
-			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+				                //carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
+
 			            	}
 
 			            	else {
@@ -134,7 +148,6 @@ public class PlateauDeJeu extends Deck{
 			                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
 				
 		        	}
-		        	carteSurLePlateau.add(carte);
 
         	}
         	
@@ -150,47 +163,52 @@ public class PlateauDeJeu extends Deck{
 
 	        	    Carte carteAdv  = Monitor.getCartePlateauAtt(plateauAdversaire, alea);
 	        		carte.actionClassique(carte, carteAdv);
+                	joueurCarteEnJeu.add(carte);
+
 	        		if (carteAdv.getVie() <= 0) {
 	        			
 	        			
 	        			
 	        			List<Carte> DeckMoinsCarte = PlateauPlayer(adversaire); 
                     	DeckMoinsCarte.remove(carteAdv);
-                    	System.out.println(adversaireCarteEnJeu);
-	        		}
-	        		else {
-	                	carteSurLePlateau.add(carte);
+                    	adversaireCarteEnJeu = DeckMoinsCarte;
+                    	//System.out.println(adversaireCarteEnJeu);
+                    	System.out.println("LES NOUVELLES CARTES EN JEUX DE : " + adversaire.getNom()+" -> " +adversaireCarteEnJeu);
 
 	        		}
+	        		
+	        		
         		}
 	        		
         		else if(champion == adversaire) 
         		{
-        			List<Carte> plateauAllie = PlateauPlayer(joueur); // Je recupere le plateau adverse et je prend une carte au hasard dedans
-	        		System.out.println("Plateau alliée : "+plateauAllie);
+        			List<Carte> plateauAllie1 = PlateauPlayer(joueur); // Je recupere le plateau adverse et je prend une carte au hasard dedans
+	        		//System.out.println("Plateau alliée : "+plateauAllie);
 	        		
 	        		
 	        		Random random1 = new Random();
-	        		int alea1 = random1.nextInt(plateauAllie.size()); // Cho
+	        		int alea1 = random1.nextInt(plateauAllie1.size()); // Cho
 
 	        		//carte.actionClassique(carte,Monitor.getCartePlateauAtt(plateauAllie, alea1));
-	        		Carte carteAdv  = Monitor.getCartePlateauAtt(plateauAllie, alea1);
+	        		Carte carteAdv1  = Monitor.getCartePlateauAtt(plateauAllie1, alea1);
 	        		
-	        		carte.actionClassique(carte, carteAdv);
-	        		if (carteAdv.getVie() <= 0) {
+	        		carte.actionClassique(carte, carteAdv1);
+	        		adversaireCarteEnJeu.add(carte);
+	        		if (carteAdv1.getVie() <= 0) {
 	        			
-	        			
-	        			
-	        			List<Carte> DeckMoinsCarte = PlateauPlayer(joueur); 
-                    	DeckMoinsCarte.remove(carteAdv);
-                    	System.out.println(joueurCarteEnJeu);
+	        			List<Carte> DeckMoinsCarte1 = PlateauPlayer(joueur); 
+                    	DeckMoinsCarte1.remove(carteAdv1);
+                    	joueurCarteEnJeu = DeckMoinsCarte1;
+                    	System.out.println("LES NOUVELLES CARTES EN JEUX DE : " +joueur.getNom()+" ->" +joueurCarteEnJeu);
 	        		}
-	        		else {
-	                	carteSurLePlateau.add(carte);
-
-	        		}
+	        		
+	        		
         		}
         	}
+        	
+        	
+        	carteSurLePlateau.add(carte);
+
 		        	
         }
     
@@ -264,6 +282,9 @@ public class PlateauDeJeu extends Deck{
         return mainAdversaire;
     }
     
+    
+    
+    
     public boolean isProtected() {
     	if (protecteur == true) {
     		
@@ -275,6 +296,7 @@ public class PlateauDeJeu extends Deck{
     }
     
     boolean protecteur = false;
+    
     
     public void ajouterProtecteur(Carte carte) 
     {
