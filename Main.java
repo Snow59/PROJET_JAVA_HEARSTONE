@@ -14,24 +14,22 @@ public class Main {
         // CrÃ©ation des Mages
     	
         Mage jaina = Mage.JAINA;
-        Mage medivh = Mage.MEDIVH;
+        Mage KHADGAR = Mage.KHADGAR;
        
         
         Deck.associerDeck(jaina);
-        Deck.associerDeck(medivh);
+        Deck.associerDeck(KHADGAR);
         
 //        jaina.afficherDeck();
 //        System.out.println("\n");
 //        medivh.afficherDeck();
 
                
-        
-        PlateauDeJeu plateau = new PlateauDeJeu(jaina, medivh);
-        
-        Monitor MaitreDeLaPartie = new Monitor(scanner ,jaina , medivh);
+            
+        Monitor MaitreDeLaPartie = new Monitor(scanner ,jaina , KHADGAR);
         	
         //MaitreDeLaPartie.jouerTour(jaina);
-        while(((jaina.getPointsDeVie() > 0) || (medivh.getPointsDeVie() > 0 )) ) {
+        while(((jaina.getPointsDeVie() > 0) || (KHADGAR.getPointsDeVie() > 0 )) ) {
         	
 	        	for (int i = 0; i < 10; i++) {
 		        	System.out.println("-----------------------------");
@@ -44,12 +42,12 @@ public class Main {
 		        for (int i = 0; i < 10; i++) {
 		        	System.out.println("-----------------------------");
 		        }
-		        MaitreDeLaPartie.jouerTour(medivh);
+		        MaitreDeLaPartie.jouerTour(KHADGAR);
 		        System.out.println("Tour de medivh fini");
 		        
 		        System.out.println("\nJe reset le mana ( +1 biensur ^^) ");
 		        jaina.recupererMana();
-		        medivh.recupererMana();
+		        KHADGAR.recupererMana();
         }
         if (jaina.getPointsDeVie() <= 0) {
         	System.out.println("Medivh a gagné la partie.");
