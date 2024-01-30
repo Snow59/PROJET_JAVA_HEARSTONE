@@ -31,7 +31,9 @@ public abstract class Champion implements ActionDeJeu {
 
     }
 
-
+    /**
+     * Cette methode permet d'infliger des dégats à la cible donné en parametre
+     */
     public void attaquer(Champion cible) {
         if (cible != null) {
             cible.subirDegats(this.getPuissanceAttaque());
@@ -42,14 +44,20 @@ public abstract class Champion implements ActionDeJeu {
     
     
     
-    
+    /**
+     * cette methode permet d'augmenter les pv du champion 
+     * @param pv
+     */
     public void soigner(int i) {
         while (i > 0 && this.pointsDeVie < 30) {
             this.pointsDeVie += 1;
             i -= 1; // Decrement i by 1
         }
     }
-    
+    /**
+     * Cette methode  est utiliser pour diminuer les PV du champion
+     * @param degats : nombre de degats subis par le champion
+     */
     public void subirDegats(int degats) {
     	if (this.armure > 0){
     		
@@ -88,7 +96,9 @@ public abstract class Champion implements ActionDeJeu {
     
     
     
-    
+    /**
+     * Met toutes les cartes du champion dans un tableau
+     */
     public List<Carte> getDeck() {
     	
     	List<Carte> liste = new ArrayList();
@@ -102,7 +112,9 @@ public abstract class Champion implements ActionDeJeu {
     	return liste;
     
     }
-    
+    /**
+     * Affiche toutes les cartes du champion
+     */
     public void afficherDeck() {
         System.out.println("Deck de " + nom + ":\n");
         for (Carte carte : deck) {
