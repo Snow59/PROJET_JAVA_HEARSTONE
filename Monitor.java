@@ -60,7 +60,7 @@ public class Monitor extends PlateauDeJeu{
 			        case 1:
 			        	
 			        	System.out.println(" Faites un choix  : ");
-			        	System.out.println("1) Pour utiliser une carte que vous avez poser sur le plateau"
+			        	System.out.println("1) Pour utiliser une carte que vous avez posé sur le plateau"
 			        			+ "\n2) Poser une nouvelle carte ");
 			        	
 		
@@ -95,7 +95,7 @@ public class Monitor extends PlateauDeJeu{
 						        				}
 						        				else {
 						        					
-						        					System.out.println("L'adversair n'a pas de carte a attaqué");
+						        					System.out.println("L'adversaire n'a pas de carte è attaquer");
 						        				}
 						        				break;
 						        				
@@ -200,7 +200,7 @@ public class Monitor extends PlateauDeJeu{
 			        	if (isCartePlateauPlayer(adversaire)) {
 			        		
 			        		System.out.println("Vous n'avez aucune carte sur votre plateau."
-			        				+ "Nous allons utilisé une carte de votre main actuelle"
+			        				+ "Nous allons utiliser une carte de votre main actuelle"
 			        				+ "Retour au menu principal");
 		        			jeuEnCours = false;
 
@@ -253,11 +253,11 @@ public class Monitor extends PlateauDeJeu{
 	    private void afficherMenu() {
 	    	
 	    	System.out.println("\nVous voulez faire quoi ? \n"
-		            + "1 : jouer une carte ?\n"
-		            + "2 : Jouer votre spÃ©cial\n"
-		            + "3 : attaquer une cible ennemie avec une carte\n"
-		            + "4 : attaquer avec votre puissance d'attaque\n"
-		            + "5 : piocher une carte");
+		            + "[1] : jouer une carte ?\n"
+		            + "[2] : jouer votre spécial\n"
+		            + "[3] : attaquer une cible ennemie avec une carte\n"
+		            + "[4] : attaquer avec votre puissance d'attaque\n"
+		            + "[5] : piocher une carte");
 	    }
 	    /**
 		 * Methode qui affiche les informations du Champion
