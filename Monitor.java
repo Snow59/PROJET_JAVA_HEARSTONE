@@ -65,6 +65,10 @@ public class Monitor extends PlateauDeJeu{
 			        	switch(choix1) {
 			        		
 						        		case 1 :
+						        			
+						        			
+						        			
+						        			
 						        			if (isCartePlateauPlayer(player)) { //verifie si le player a des cartes sur le plateau
 						        	    		
 						        	    		System.out.println("Tu n'as aucune carte sur le plateau désolé , ");
@@ -81,6 +85,7 @@ public class Monitor extends PlateauDeJeu{
 						        				//System.out.println(PlateauJoueur.get(result));
 						        				jouerCarte(player, getCartePlateau(PlateauJoueur, result));
 						        				jeuEnCours = false;
+						        				break;
 						        				
 						        				
 						        				
@@ -257,6 +262,7 @@ public class Monitor extends PlateauDeJeu{
 	    
 	    public static Carte getCartePlateau(List<Carte> cartes, int id) {
 	    	
+	    	System.out.println("GET CARTE : "+cartes);
 	    	for(Carte carte : cartes ) {
 	    		
 	    		if (carte.getId() == id){
@@ -266,5 +272,11 @@ public class Monitor extends PlateauDeJeu{
 	    		
 			return null;
 	    }
+	    
+	    public static Carte getCartePlateauAtt(List<Carte> cartes, int index) {
+	        if (index >= 0 && index < cartes.size()) {
+	            return cartes.get(index);
+	        }
+	        return null; // Or throw an exception
+	    }
 }
-
