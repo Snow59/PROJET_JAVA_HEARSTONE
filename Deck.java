@@ -43,7 +43,7 @@ public class Deck{
         deck.add(new Carte("NÃ©cromancien",5, 6, 6, 0, 0, "Classique"));
         deck.add(new Carte("Paladin de la LumiÃ¨re",5, 7, 0, 4, 0, "Protecteur"));
         deck.add(new Carte("Mascotte de la Chance",5, 2, 0, 0, 0, "Mascotte"));
-        deck.add(new Carte("Soldat Endurci",5, 5, 4, 2, 0, "Classique"));
+        deck.add(new Carte("Soldat Endurci",5, 5, 4, 0, 0, "Classique"));
         deck.add(new Carte("Ã‰lÃ©mentaire de Glace",5, 6, 0, 7, 0, "Protecteur"));
         deck.add(new Carte("Druide de la ForÃªt",5, 4, 0, 0, 3, "Soigneur"));
         deck.add(new Carte("Mascotte MystÃ©rieuse",5, 1, 0, 0, 0, "Mascotte"));
