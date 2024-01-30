@@ -22,7 +22,12 @@ public class Monitor extends PlateauDeJeu{
 		this.scanner = scanner;
 		
 	}
-	
+	/**
+	 * Mais en place le systeme de jeu.
+	 * Tour par tour.
+	 * En prenant ce que l'utilisateur saisi sur la console
+	 * @param player
+	 */
 	public void jouerTour(Champion player) {
 		
 		if (player == adversaire) {
@@ -242,7 +247,9 @@ public class Monitor extends PlateauDeJeu{
 		}
 	    
 	}
-	    
+	    /**
+		 * Methode qui affiche le menu sur la console
+		 */
 	    private void afficherMenu() {
 	    	
 	    	System.out.println("\nVous voulez faire quoi ? \n"
@@ -252,7 +259,10 @@ public class Monitor extends PlateauDeJeu{
 		            + "4 : attaquer avec votre puissance d'attaque\n"
 		            + "5 : piocher une carte");
 	    }
-	    
+	    /**
+		 * Methode qui affiche les informations du Champion
+		 * @param player
+		 */
 	    private void infoPlayer(Champion player) {
 	    	
 	    	System.out.println("\n"+player.getNom()+  " je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : "
@@ -266,7 +276,12 @@ public class Monitor extends PlateauDeJeu{
 	    }
 	    
 	    
-	    
+	    /**
+		 * Methode qui retourne la carte se trouvant sur le plateau
+		 * @param cartes
+		 * @param id
+		 * @return carte
+		 */
 	    public static Carte getCartePlateau(List<Carte> cartes, int id) {
 	    	
 	    	//System.out.println("GET CARTE : "+cartes);
@@ -279,7 +294,12 @@ public class Monitor extends PlateauDeJeu{
 	    		
 			return null;
 	    }
-	    
+		/**
+		 * Methode qui retourne la carte qui attaque
+		 * @param cartes
+		 * @param index
+		 * @return carte
+		 */
 	    public static Carte getCartePlateauAtt(List<Carte> cartes, int index) {
 	        if (index >= 0 && index < cartes.size()) {
 	            return cartes.get(index);
