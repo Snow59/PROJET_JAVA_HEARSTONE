@@ -35,7 +35,7 @@ public class Carte {
         switch (type) {
             case "Classique":
                 // Les monstres classiques attaquent directement l'ennemi pas les cartes 
-                cible.subirDegats(invocateur.getPuissanceAttaque());
+                cible.subirDegats(this.getDegatsAttaque());
                 invocateur.utiliserMana(this.coutMana);
                 break;
             case "Protecteur":
