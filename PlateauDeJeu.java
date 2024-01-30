@@ -26,7 +26,9 @@ public class PlateauDeJeu extends Deck{
     }
 
 
-
+	/**
+	 * permet de mettre en place  la gestion des cartes dans le jeu
+	 */
     public void jouerCarte(Champion champion, Carte carte) {
     	
         	
