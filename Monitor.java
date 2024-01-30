@@ -83,8 +83,15 @@ public class Monitor extends PlateauDeJeu{
 						        				int result = scanner.nextInt();
 						        				
 						        				//System.out.println(PlateauJoueur.get(result));
-						        				jouerCarte(player, getCartePlateau(PlateauJoueur, result));
-						        				jeuEnCours = false;
+						        				if (getCartePlateau(PlateauJoueur, result) != null) {
+						        					
+						        					jouerCarte(player, getCartePlateau(PlateauJoueur, result));
+							        				jeuEnCours = false;
+						        				}
+						        				else {
+						        					
+						        					System.out.println("L'adversair n'a pas de carte a attaqué");
+						        				}
 						        				break;
 						        				
 						        				
@@ -94,7 +101,7 @@ public class Monitor extends PlateauDeJeu{
 						        							        			
 						        		case 2 :
 						        							        			
-						        			System.out.println("Entrez l'id de la carte que vous voulez mettre : ");
+						        			System.out.println("Entrez l'id de la carte que vous voulez utiliser : ");
 						        			boolean test = false;
 						        			while (test != true) {
 						        				
@@ -262,7 +269,7 @@ public class Monitor extends PlateauDeJeu{
 	    
 	    public static Carte getCartePlateau(List<Carte> cartes, int id) {
 	    	
-	    	System.out.println("GET CARTE : "+cartes);
+	    	//System.out.println("GET CARTE : "+cartes);
 	    	for(Carte carte : cartes ) {
 	    		
 	    		if (carte.getId() == id){
