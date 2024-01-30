@@ -33,14 +33,19 @@ public class Main {
         //MaitreDeLaPartie.jouerTour(jaina);
         while(((jaina.getPointsDeVie() > 0) || (medivh.getPointsDeVie() > 0 )) ) {
         	
+	        	for (int i = 0; i < 10; i++) {
+		        	System.out.println("-----------------------------");
+		        }
 		        MaitreDeLaPartie.jouerTour(jaina);
 		        System.out.println("\nTour de jaina fini");
 		        
-		        for (int i = 0; i < 20; i++) {
-		            System.out.println("\n");
+	            System.out.println("\n");
+
+		        for (int i = 0; i < 10; i++) {
+		        	System.out.println("-----------------------------");
 		        }
 		        MaitreDeLaPartie.jouerTour(medivh);
-		        System.out.println("Tour de jaina fini");
+		        System.out.println("Tour de medivh fini");
 		        
 		        System.out.println("\nJe reset le mana ( +1 biensur ^^) ");
 		        jaina.recupererMana();
