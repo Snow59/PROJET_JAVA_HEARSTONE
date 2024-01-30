@@ -37,13 +37,6 @@ public class Carte {
         switch (type) {
             case "Classique":
                 // Les monstres classiques attaquent directement l'ennemi pas les cartes 
-            	if (plateau.isProtected()){
-            		
-            		
-            	}
-            	if (cible.getArmure() > 0) {
-            		//cible.set
-            	}
                 cible.subirDegats(this.getDegatsAttaque());
                 invocateur.utiliserMana(this.coutMana);
                 break;
@@ -60,35 +53,45 @@ public class Carte {
                
                 break;
             case "Mascotte":
-            	System.out.println("Je suis une macostte");
-                int effet = random.nextInt(3); // 0 pour Attaque, 1 pour Armure, 2 pour Soins
-                int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte PosÃ©e
-		/**
-		 * 
-		*La mascotte a Ã©tÃ© complexe et long Ã  faire mais le principe c'est  quand on invoque cette carte 
-  		* qui ne coutera que 1 de mana , elle fait qql chose de totalement alÃ©atoire !
-    	* elle choisit entre notre champion , l'une de nos carte dÃ©ja posÃ©s
-      	* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
-		*/
-
-		
-                Carte carteCiblee;
-                if (cibleEffet == 0) { // Effet sur le Champion
-                	
-                    appliquerEffetMascotteChampion(cible); // Je boost lattaque de +1
-                    
-                } else if (cibleEffet == 1) { // Effet sur une Carte PosÃ©e
-                	
-                    carteCiblee = cartesEnJeu.get(random.nextInt(cartesEnJeu.size()));
-                    appliquerEffetMascotte(carteCiblee, effet);
-                }
+            	
+            	
                 break;
+        }
+    
+    } 
+    
+    
+    
+    public void carteMascotte(Carte carte, Champion champion) {
+    	
+    
+        Random random = new Random();
+		
+    	System.out.println("Je suis une mascotte");
+        int effet = random.nextInt(3); // 0 pour Attaque, 1 pour Armure, 2 pour Soins
+        int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte PosÃ©e
+/**		
+ * 
+*La mascotte a Ã©tÃ© complexe et long Ã  faire mais le principe c'est  quand on invoque cette carte 
+	* qui ne coutera que 1 de mana , elle fait qql chose de totalement alÃ©atoire !
+* elle choisit entre notre champion , l'une de nos carte dÃ©ja posÃ©s
+	* Ensuite elle choisit soit de mettre de +1 d'armure , soit +1 de vie , soit +1 d'attaque 
+*/
+
+        
+        Carte carteCiblee;
+        if (cibleEffet == 0) { // Effet sur le Champion
+        	
+            appliquerEffetMascotteChampion(champion); // Je boost lattaque de +1
+            
+        } else if (cibleEffet == 1) { // Effet sur une Carte PosÃ©e
+        	
+            carteCiblee = carte;
+            appliquerEffetMascotte(carteCiblee, effet);
         }
     }
     
-    
-    
-    
+    	
     
     
     
@@ -101,7 +104,6 @@ public class Carte {
         
         if (type == "Classique") {
         	
-        	System.out.println(cartesEnJeuAdversaire);
         	System.out.println("PUISSANCE DATTAQUE CARTE QUI ATTAQUE : "+carteQuiAttaque.getDegatsAttaque());
         	cartesEnJeuAdversaire.subirDegatsCarte(cartesEnJeuAdversaire, carteQuiAttaque.getDegatsAttaque());
         	System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subit  "+carteQuiAttaque.getDegatsAttaque()+" de dégat d'attaque");
@@ -158,8 +160,22 @@ public class Carte {
     }
     
     
+    public void LifeProtecteur(Carte carte) {
+    	
+    	carte.getAddArmure() ;
+    	
+    	
+    }
     
-    public int getVie() {
+    
+
+    
+    public void setAddArmure(int degat) {
+    	
+		this.addArmure -= degat;
+	}
+
+	public int getVie() {
 		return vie;
 	}
 
