@@ -3,6 +3,7 @@ package IMT_HearStone;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class PlateauDeJeu extends Deck{
     private Champion joueur;
@@ -28,53 +29,171 @@ public class PlateauDeJeu extends Deck{
 
     public void jouerCarte(Champion champion, Carte carte) {
     	
-        	System.out.println(carte);
-        	if (champion == joueur) {
-            	
-	            	if (carte.getType() == "Mascotte"){
-	            		
-	            		System.out.println("Une carte de type boost Mascotte a été posée");
-	            	}
-	            	else {
-	            		
-	            			
-	            			joueurCarteEnJeu.add(carte);
-	
-	                    	List<Carte> DeckMoinsCarte = joueur.getDeck();
-	                    	DeckMoinsCarte.remove(carte);
-	                    	
-	                    	joueur.setDeck(DeckMoinsCarte);
-	                    	joueur.afficherDeck();
-	         
-	            			}
-	      			carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
+        	
+        	//System.out.println("CARTE PLATEAU ALLIEE"+carte);
+        	
+        	CheckChampion(champion);
+        	
+        	if((isCartePlateauPlayer(champion) == true) || (carte.getType() != ("Classique"))){
+        			
+        			
+		        	if (champion == joueur) {
+		            	
+		        		
+		        		
+			            	if (carte.getType() == "Mascotte"){
+			            		
+			            		System.out.println("Une carte de type boost Mascotte a été posée");
+			            	}
+			            	
+			            	else if(carte.getType() == "Soigneur")
+			            	{
+			            		List<Carte> DeckMoinsCarte = joueur.getDeck();
+		                    	DeckMoinsCarte.remove(carte);
+		                    	
+		                    	joueur.setDeck(DeckMoinsCarte);
+		                    	//joueur.afficherDeck();
+		         
+		            			
+			            		carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
+			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            	}
+			            	
+			            	else if(carte.getType() == "Protecteur") {
+			            		
+			            		List<Carte> DeckMoinsCarte = joueur.getDeck();
+		                    	DeckMoinsCarte.remove(carte);
+		                    	
+		                    	joueur.setDeck(DeckMoinsCarte);
+		                    	//joueur.afficherDeck();
+		         
+		            			
+			            		carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
+			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            		
+			            	}
+			            	else {
+			            		
+			            			
+			            			joueurCarteEnJeu.add(carte);
+			
+			                    	List<Carte> DeckMoinsCarte = joueur.getDeck();
+			                    	DeckMoinsCarte.remove(carte);
+			                    	
+			                    	joueur.setDeck(DeckMoinsCarte);
+			                    	//joueur.afficherDeck();
+			         
+			            			}
+			      				carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
+		
+		        	}
+		        	
+		        	else if(champion == adversaire){
+		  
+			        		if (carte.getType() == "Mascotte"){
+			            		
+			            		System.out.println("Une carte de type boost Mascotte a été posée");
+			            		adversaireCarteEnJeu.add(carte);
+			
+			            	}
+			        		else if(carte.getType() == "Soigneur")
+			            	{
+			            		List<Carte> DeckMoinsCarte = adversaire.getDeck();
+		                    	DeckMoinsCarte.remove(carte);
+		                    	
+			                	adversaire.setDeck(DeckMoinsCarte);
+		                    	//joueur.afficherDeck();
+		         
+		            			
+				                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
+			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            	}
+			        		else if(carte.getType() == "Protecteur")
+			            	{
+			            		List<Carte> DeckMoinsCarte = adversaire.getDeck();
+		                    	DeckMoinsCarte.remove(carte);
+		                    	
+			                	adversaire.setDeck(DeckMoinsCarte);
+		                    	//joueur.afficherDeck();
+		         
+		            			
+				                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
+			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            	}
+
+			            	else {
+			            		
+			            		adversaireCarteEnJeu.add(carte);
+			            		List<Carte> DeckMoinsCarte = adversaire.getDeck();
+			                	DeckMoinsCarte.remove(carte);
+			                	
+			                	adversaire.setDeck(DeckMoinsCarte);
+			                	//adversaire.afficherDeck();
+			
+			            	}
+			                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
+				
+		        	}
+		        	carteSurLePlateau.add(carte);
 
         	}
         	
-        	else if(champion == adversaire){
-  
-	        		if (carte.getType() == "Mascotte"){
-	            		
-	            		System.out.println("Une carte de type boost Mascotte a été posée");
-	            		adversaireCarteEnJeu.add(carte);
-	
-	            	}
-	            	else {
-	            		
-	            		adversaireCarteEnJeu.add(carte);
-	            		List<Carte> DeckMoinsCarte = adversaire.getDeck();
-	                	DeckMoinsCarte.remove(carte);
-	                	
-	                	adversaire.setDeck(DeckMoinsCarte);
-	                	adversaire.afficherDeck();
-	
-	            	}
-	                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
-		
+        	else{
+        		if (champion == joueur)
+        		{
+        			
+        			//Si le champion est allié on recup le plateau adverse
+	        		List<Carte> plateauAdversaire = PlateauPlayer(adversaire); // Je recupere le plateau adverse et je prend une carte au hasard dedans
+	        		
+	        		Random random = new Random();
+	        	    int alea = random.nextInt(plateauAdversaire.size()); // Cho
+
+	        	    Carte carteAdv  = Monitor.getCartePlateauAtt(plateauAdversaire, alea);
+	        		carte.actionClassique(carte, carteAdv);
+	        		if (carteAdv.getVie() <= 0) {
+	        			
+	        			
+	        			
+	        			List<Carte> DeckMoinsCarte = PlateauPlayer(adversaire); 
+                    	DeckMoinsCarte.remove(carteAdv);
+                    	System.out.println(adversaireCarteEnJeu);
+	        		}
+	        		else {
+	                	carteSurLePlateau.add(carte);
+
+	        		}
+        		}
+	        		
+        		else if(champion == adversaire) 
+        		{
+        			List<Carte> plateauAllie = PlateauPlayer(joueur); // Je recupere le plateau adverse et je prend une carte au hasard dedans
+	        		System.out.println("Plateau alliée : "+plateauAllie);
+	        		
+	        		
+	        		Random random1 = new Random();
+	        		int alea1 = random1.nextInt(plateauAllie.size()); // Cho
+
+	        		//carte.actionClassique(carte,Monitor.getCartePlateauAtt(plateauAllie, alea1));
+	        		Carte carteAdv  = Monitor.getCartePlateauAtt(plateauAllie, alea1);
+	        		
+	        		carte.actionClassique(carte, carteAdv);
+	        		if (carteAdv.getVie() <= 0) {
+	        			
+	        			
+	        			
+	        			List<Carte> DeckMoinsCarte = PlateauPlayer(joueur); 
+                    	DeckMoinsCarte.remove(carteAdv);
+                    	System.out.println(joueurCarteEnJeu);
+	        		}
+	        		else {
+	                	carteSurLePlateau.add(carte);
+
+	        		}
+        		}
         	}
-        	carteSurLePlateau.add(carte);
 		        	
         }
+    
     
     public boolean isCartePlateauPlayer(Champion player){
     	
@@ -102,8 +221,9 @@ public class PlateauDeJeu extends Deck{
     	}
     }
     
+   
     
-    
+
     
     
     public List<Carte>  PlateauPlayer(Champion player){
@@ -120,7 +240,17 @@ public class PlateauDeJeu extends Deck{
     }
     
     
-    
+    public void CheckChampion(Champion champion) {
+    	
+    	if (champion == joueur) {
+    		
+    		this.joueur = joueur;
+    	}
+    	else {
+    		
+    		this.adversaire = adversaire;
+    	}
+    }
     
     
     
@@ -134,11 +264,27 @@ public class PlateauDeJeu extends Deck{
         return mainAdversaire;
     }
     
+    public boolean isProtected() {
+    	if (protecteur == true) {
+    		
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    }
     
+    boolean protecteur = false;
     
-    public void ajouterProtecteur(Carte carte)
+    public void ajouterProtecteur(Carte carte) 
     {
-    	
+    	if (carte.getAddArmure() > 0){
+    		
+    		protecteur = true;
+    	}
+    	else {
+    		protecteur = false;
+    	}
     }
     // Autres mÃ©thodes utiles
 }
