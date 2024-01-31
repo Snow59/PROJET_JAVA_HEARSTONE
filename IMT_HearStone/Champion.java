@@ -117,8 +117,10 @@ public abstract class Champion implements ActionDeJeu {
      */
     public void afficherDeck() {
         System.out.println("Deck de " + nom + ":\n");
+        Logger.log("Deck de " + nom + ":\n");
         for (Carte carte : deck) {
             System.out.println(carte);
+            Logger.log("carte:"+carte);
         }
     }
 

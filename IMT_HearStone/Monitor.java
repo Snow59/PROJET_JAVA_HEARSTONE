@@ -12,7 +12,7 @@ public class Monitor extends PlateauDeJeu{
 	private boolean joueurSpecialUsed;
 	private boolean adversaireSpecialUsed;
     private static Scanner scanner; // Scanner global
-
+	// private String ligneLog = "";
 	
 	
 	public Monitor(Scanner scanner, Champion joueur, Champion adversaire) {
@@ -51,21 +51,21 @@ public class Monitor extends PlateauDeJeu{
 			    
 				System.out.println("\n Faites un choix : ");
 			    Scanner scanner = new Scanner(System.in);
-		
+				// ajouterMots("hello");
 			    int choix = scanner.nextInt();
+				Logger.log("le user choisi : "+choix);
 			    
 			    switch (choix) {
 			    
 			    	
 			        case 1:
-			        	
-			        	System.out.println(" Faites un choix  : ");
-			        	System.out.println("1) Pour utiliser une carte que vous avez posé sur le plateau"
-			        			+ "\n2) Poser une nouvelle carte ");
-			        	
-		
-			        	int choix1 = scanner.nextInt();
-			        	
+					System.out.println(" Faites un choix  : ");
+					System.out.println("1) Pour utiliser une carte que vous avez posé sur le plateau"
+					+ "\n2) Poser une nouvelle carte ");
+					
+					
+						int choix1 = scanner.nextInt();
+						Logger.log("le user a choisi: 1 ensuite" + choix1 );
 			        	
 			        	switch(choix1) {
 			        		
@@ -75,7 +75,7 @@ public class Monitor extends PlateauDeJeu{
 						        			
 						        			
 						        			if (isCartePlateauPlayer(player)) { //verifie si le player a des cartes sur le plateau
-						        	    		
+						        	    		Logger.log("Tu n'as aucune carte sur le plateau désolé , ");
 						        	    		System.out.println("Tu n'as aucune carte sur le plateau désolé , ");
 						        	    	}
 						        			else {
@@ -85,8 +85,9 @@ public class Monitor extends PlateauDeJeu{
 						        				List<Carte> PlateauJoueur = PlateauPlayer(player);
 						        				System.out.println(PlateauJoueur);
 						        				System.out.println("Entrez l'id de la carte que vous voulez mettre : ");
-						        				int result = scanner.nextInt();
-						        				
+						        				Logger.log("Entrez l'id de la carte que vous voulez mettre : ");
+												int result = scanner.nextInt();
+						        				Logger.log("il a choisi : "+ result);
 						        				//System.out.println(PlateauJoueur.get(result));
 						        				if (getCartePlateau(PlateauJoueur, result) != null) {
 						        					
@@ -96,6 +97,7 @@ public class Monitor extends PlateauDeJeu{
 						        				else {
 						        					
 						        					System.out.println("L'adversaire n'a pas de carte è attaquer");
+													Logger.log("L'adversaire n'a pas de carte è attaquer");
 						        				}
 						        				break;
 						        				
@@ -107,6 +109,7 @@ public class Monitor extends PlateauDeJeu{
 						        		case 2 :
 						        							        			
 						        			System.out.println("Entrez l'id de la carte que vous voulez utiliser : ");
+											Logger.log("Entrez l'id de la carte que vous voulez utiliser : ");
 						        			boolean test = false;
 						        			while (test != true) {
 						        				
@@ -119,6 +122,7 @@ public class Monitor extends PlateauDeJeu{
 								        			if(Deck.checkmana(player, Deck.getCarte(player, result))) {
 								        				jouerCarte(player, Deck.getCarte(player, result));
 									        			System.out.println("Votre mana  pour ce tour est de :"+player.getManaActuel());
+														Logger.log("Votre mana  pour ce tour est de :"+player.getManaActuel());
 									        			test = true;
 									        			jeuEnCours = false;
 									        			
@@ -126,13 +130,15 @@ public class Monitor extends PlateauDeJeu{
 								        			else {
 								        				System.out.println("Vous n'avez pas assez de mana pour cette carte "+player.getManaActuel());
 								        				System.out.println("Choisissez une autre option : ");
-								        				
+								        				Logger.log("Vous n'avez pas assez de mana pour cette carte "+player.getManaActuel());
+								        				Logger.log("Choisissez une autre option : ");
 								        				break;
 								        			}
 								        			
 							        			}
 							        			catch(Exception e) {
 							        				System.out.println("l'ID n'existe pas choisi en un autre :");
+													Logger.log("Erreur:" + "l'ID n'existe pas choisi en un autre :");
 							        			}
 							        			//Jouer carte de ton deck 
 			        						}
@@ -140,6 +146,7 @@ public class Monitor extends PlateauDeJeu{
 								        			
 						        		default:
 						    	            System.out.println("Choix invalide");
+											Logger.log("Choix invalide");
 						    	            break;
 			        			}
 		
@@ -251,7 +258,7 @@ public class Monitor extends PlateauDeJeu{
 		 * Methode qui affiche le menu sur la console
 		 */
 	    private void afficherMenu() {
-	    	
+	    	Logger.log("l'utilisateur choisi entre 1 et 5 pour les actions a faire");
 	    	System.out.println("\nVous voulez faire quoi ? \n"
 		            + "[1] : jouer une carte ?\n"
 		            + "[2] : jouer votre spécial\n"
@@ -264,7 +271,10 @@ public class Monitor extends PlateauDeJeu{
 		 * @param player
 		 */
 	    private void infoPlayer(Champion player) {
-	    	
+	    	Logger.log(player.getNom()+"Vie : \""+player.getPointsDeVie()+"\n Mana Actuel : "+player.getManaActuel()+
+			"\n Puissance d'attaque : "+player.getPuissanceAttaque()+
+			"\n Armure : "+player.getArmure());
+
 	    	System.out.println("\n"+player.getNom()+  " je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : "
 					+ "\n Vie : "+player.getPointsDeVie()+
 					 "\n Mana Actuel : "+player.getManaActuel()+
@@ -306,4 +316,13 @@ public class Monitor extends PlateauDeJeu{
 	        }
 	        return null; // Or throw an exception
 	    }
+
+		// public void ajouterMots(String...mots){
+		// 	for( String mot : mots){
+		// 		this.ligneLog += mot + " ";
+		// 	}
+		// }
+		// public String getLigneLog(){
+		// 	return ligneLog.trim();
+		// }
 }
