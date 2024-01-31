@@ -37,7 +37,7 @@ public abstract class Champion implements ActionDeJeu {
     public void attaquer(Champion cible) {
         if (cible != null) {
             cible.subirDegats(this.getPuissanceAttaque());
-            System.out.println(this.getNom() + " attaque " + cible.getNom() + " infligeant " + this.getPuissanceAttaque() + " dÃ©gÃ¢ts.");
+            Logger.log(this.getNom() + " attaque " + cible.getNom() + " infligeant " + this.getPuissanceAttaque() + " dÃ©gÃ¢ts.");
         }
     }
 
@@ -68,10 +68,10 @@ public abstract class Champion implements ActionDeJeu {
     		 this.pointsDeVie -= degats;
     	        if (this.pointsDeVie < 0) {
     	            this.pointsDeVie = 0;
-    	            System.out.println("La partie est terminÃ©e car " + this.nom + " est maintenant mort.");
+    	            Logger.log("La partie est terminÃ©e car " + this.nom + " est maintenant mort.");
     	            
     	        }
-    	        System.out.println(this.nom + " a subi " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
+    	        Logger.log(this.nom + " a subi " + degats + " points de dÃ©gats, sa vie est  mtn de : " + pointsDeVie );
     	    
     		
     	}
@@ -116,11 +116,10 @@ public abstract class Champion implements ActionDeJeu {
      * Affiche toutes les cartes du champion
      */
     public void afficherDeck() {
-        System.out.println("Deck de " + nom + ":\n");
+        
         Logger.log("Deck de " + nom + ":\n");
         for (Carte carte : deck) {
-            System.out.println(carte);
-            Logger.log("carte:"+carte);
+            Logger.log(""+carte);
         }
     }
 

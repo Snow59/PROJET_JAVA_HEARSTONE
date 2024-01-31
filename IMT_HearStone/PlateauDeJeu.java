@@ -45,7 +45,7 @@ public class PlateauDeJeu extends Deck{
 		        		
 			            	if (carte.getType() == "Mascotte"){
 			            		
-			            		System.out.println("Une carte de type boost Mascotte a été posée");
+			            		Logger.log("Une carte de type boost Mascotte a été posée");
 			            		
 			            		List<Carte> plateauAllie = PlateauPlayer(joueur); // Je recupere le plateau adverse et je prend une carte au hasard dedans
 				        		
@@ -66,7 +66,7 @@ public class PlateauDeJeu extends Deck{
 		         
 		            			
 			            		carte.action(joueur , adversaire, this , carteSurLePlateau, joueurCarteEnJeu , adversaireCarteEnJeu);
-			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            		Logger.log("Carte pas add sur mon plateau psk "+carte.getType());
 			            	}
 			            	
 			            	else if(carte.getType() == "Protecteur") {
@@ -102,7 +102,7 @@ public class PlateauDeJeu extends Deck{
 		  
 			        		if (carte.getType() == "Mascotte"){
 			            		
-			            		System.out.println("Une carte de type boost Mascotte a été posée");
+			            		Logger.log("Une carte de type boost Mascotte a été posée");
 			            		List<Carte> plateauAdversaire = PlateauPlayer(adversaire); // Je recupere le plateau adverse et je prend une carte au hasard dedans
 				        		
 				        		Random random = new Random();
@@ -122,7 +122,7 @@ public class PlateauDeJeu extends Deck{
 		         
 		            			
 				                carte.action(adversaire , joueur, this , carteSurLePlateau, adversaireCarteEnJeu , joueurCarteEnJeu);
-			            		System.out.println("Carte pas add sur mon plateau psk "+carte.getType());
+			            		Logger.log("Carte pas add sur mon plateau psk "+carte.getType());
 			            	}
 			        		else if(carte.getType() == "Protecteur")
 			            	{
@@ -174,7 +174,7 @@ public class PlateauDeJeu extends Deck{
                     	DeckMoinsCarte.remove(carteAdv);
                     	adversaireCarteEnJeu = DeckMoinsCarte;
                     	//System.out.println(adversaireCarteEnJeu);
-                    	System.out.println("Les nouvelles cartes en jeu de : " + adversaire.getNom()+" -> " +adversaireCarteEnJeu);
+                    	Logger.log("Les nouvelles cartes en jeu de : " + adversaire.getNom()+" -> " +adversaireCarteEnJeu);
 
 	        		}	
 	        		
@@ -199,7 +199,7 @@ public class PlateauDeJeu extends Deck{
 	        			List<Carte> DeckMoinsCarte1 = PlateauPlayer(joueur); 
                     	DeckMoinsCarte1.remove(carteAdv1);
                     	joueurCarteEnJeu = DeckMoinsCarte1;
-                    	System.out.println("Les nouvelles cartes en jeu de : " +joueur.getNom()+" ->" +joueurCarteEnJeu);
+                    	Logger.log("Les nouvelles cartes en jeu de : " +joueur.getNom()+" ->" +joueurCarteEnJeu);
 	        		}
 	        		
 	        		

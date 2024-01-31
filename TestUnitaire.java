@@ -8,6 +8,7 @@ import org.junit.Test;
 import HearStoneClasseChampion.Mage;
 import IMT_HearStone.Carte;
 import IMT_HearStone.Deck;
+import IMT_HearStone.Logger;
 import IMT_HearStone.Monitor;
 import IMT_HearStone.PlateauDeJeu;
 
@@ -62,7 +63,7 @@ public class TestUnitaire {
         plateau.add(tueur1);
         plateau.add(cible1);
         
-        System.out.println(plateau);
+        Logger.log(""+plateau);
         //tueur.afficherDeck();
         //cible.afficherDeck();
         //System.out.println(tueur1);

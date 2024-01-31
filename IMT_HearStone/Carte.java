@@ -42,7 +42,7 @@ public class Carte {
      */
     public void action(Champion invocateur , Champion cible, PlateauDeJeu plateau , List<Carte> cartesEnJeu , List<Carte> carteEnJeuJoueur, List<Carte> cartesEnJeuAdversaire) {
         Random random = new Random();
-        System.out.println("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
+        Logger.log("\nCarte sur le plateau du joueur "+invocateur.getNom()+" :  "+carteEnJeuJoueur);
 //        System.out.println("\nCarte sur le plateau du cible "+cible.getNom()+" :  "+cartesEnJeuAdversaire);
 
         switch (type) {
@@ -60,7 +60,7 @@ public class Carte {
             case "Soigneur":
             		
                 	invocateur.soigner(this.getRestoreHealth());
-                	System.out.println("La vie de "+invocateur.getPointsDeVie());
+                	Logger.log("La vie de "+invocateur.getPointsDeVie());
                
                 break;
             case "Mascotte":
@@ -78,7 +78,7 @@ public class Carte {
     
         Random random = new Random();
 		
-    	System.out.println("Je suis une mascotte");
+    	Logger.log("Je suis une mascotte");
         int effet = random.nextInt(3); // 0 pour Attaque, 1 pour Armure, 2 pour Soins
         int cibleEffet = random.nextInt(2); // 0 pour Champion, 1 pour Carte PosÃ©e
 /**		
@@ -120,15 +120,15 @@ public class Carte {
         
         if (type == "Classique") {
         	
-        	System.out.println("PUISSANCE DATTAQUE CARTE QUI ATTAQUE : "+carteQuiAttaque.getDegatsAttaque());
+        	Logger.log("PUISSANCE DATTAQUE CARTE QUI ATTAQUE : "+carteQuiAttaque.getDegatsAttaque());
         	cartesEnJeuAdversaire.subirDegatsCarte(cartesEnJeuAdversaire, carteQuiAttaque.getDegatsAttaque());
-        	System.out.println("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subi  "+carteQuiAttaque.getDegatsAttaque()+" de dégat d'attaque");
+        	Logger.log("\nCarte sur le plateau adverse "+cartesEnJeuAdversaire.getNom()+" a subi  "+carteQuiAttaque.getDegatsAttaque()+" de dégat d'attaque");
             
         	
         }
         else {
         	
-        	System.out.println("Je ne peux pas utiliser cette carte sur une cible ennemi");
+        	Logger.log("Je ne peux pas utiliser cette carte sur une cible ennemi");
         }
         
     }

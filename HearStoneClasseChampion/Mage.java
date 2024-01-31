@@ -54,13 +54,13 @@ public class Mage extends Champion {
 	public void special(Champion cible) {
 	    if (this == JAINA) {
 	        cible.subirDegats(5);
-	        System.out.println("Jaina utilise sa capacitÃ© spÃ©ciale sur " + cible.getNom() + " infligeant 5 dÃ©gÃ¢ts.");
+	        Logger.log("Jaina utilise sa capacitÃ© spÃ©ciale sur " + cible.getNom() + " infligeant 5 dÃ©gÃ¢ts.");
 	    } else if (this == MEDIVH) {
 	        this.addArmure(5);
-	        System.out.println("Medivh utilise sa capacitÃ© spÃ©ciale et gagne 5 points d'armure.");
+	        Logger.log("Medivh utilise sa capacitÃ© spÃ©ciale et gagne 5 points d'armure.");
 	    } else if (this == KHADGAR) {
 	        cible.subirDegats(2);
-	        System.out.println("Khadgar utilise sa capacitÃ© spÃ©ciale sur " + cible.getNom() + " infligeant 2 dÃ©gÃ¢ts.");
+	        Logger.log("Khadgar utilise sa capacitÃ© spÃ©ciale sur " + cible.getNom() + " infligeant 2 dÃ©gÃ¢ts.");
 	    }
 	}
 
