@@ -19,19 +19,19 @@ public class Main {
         // CrÃ©ation des Mages
 
         Mage jaina = Mage.JAINA;
-        Mage KHADGAR = Mage.KHADGAR;
+        Mage MEDIVH = Mage.MEDIVH;
 
         Deck.associerDeck(jaina);
-        Deck.associerDeck(KHADGAR);
+        Deck.associerDeck(MEDIVH);
 
         // jaina.afficherDeck();
         // System.out.println("\n");
         // medivh.afficherDeck();
 
-        Monitor MaitreDeLaPartie = new Monitor(scanner, jaina, KHADGAR);
+        Monitor MaitreDeLaPartie = new Monitor(scanner, jaina, MEDIVH);
 
         // MaitreDeLaPartie.jouerTour(jaina);
-        while (((jaina.getPointsDeVie() > 0) || (KHADGAR.getPointsDeVie() > 0))) {
+        while (((jaina.getPointsDeVie() > 0) || (MEDIVH.getPointsDeVie() > 0))) {
 
             for (int i = 0; i < 10; i++) {
                 System.out.println("-----------------------------");
@@ -39,7 +39,6 @@ public class Main {
             Logger.log("-----------------------------");
             MaitreDeLaPartie.jouerTour(jaina);
             Logger.log("\nTour de jaina fini");
-            // ajouterLog("\\nTour de jaina fini");
 
             Logger.log("\n");
 
@@ -48,16 +47,16 @@ public class Main {
             }
             // ajouterLog("--------------");
             Logger.log("--------------");
-            MaitreDeLaPartie.jouerTour(KHADGAR);
+            MaitreDeLaPartie.jouerTour(MEDIVH);
             Logger.log("Tour de medivh fini");
 
             Logger.log("\nJe reset le mana ( +1 bien sur ^^) ");
             jaina.recupererMana();
-            KHADGAR.recupererMana();
+            MEDIVH.recupererMana();
         }
         if (jaina.getPointsDeVie() <= 0) {
             Logger.log("Medivh a gagné la partie.");
-        } else {
+        } else  {
             Logger.log("Jaina a gagné la partie.");
         }
 

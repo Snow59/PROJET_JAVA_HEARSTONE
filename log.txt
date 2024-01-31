@@ -2,11 +2,11 @@ Yahiani Hamza & Boubeker Ibrahim
 -----------------------------
 Deck de Jaina:
 
-Carte{ id=10 vie=5, nom='Chevalier Protecteur', coutMana=6, degatsAttaque=0, armureAjoutee=7, santeRestauree=0, type='Protecteur'}
-Carte{ id=18 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
-Carte{ id=11 vie=5, nom='Chaman Guérisseur', coutMana=5, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
-Carte{ id=1 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
-Carte{ id=24 vie=5, nom='Soigneur Ancien', coutMana=7, degatsAttaque=0, armureAjoutee=0, santeRestauree=7, type='Soigneur'}
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
 
 Vous voulez faire quoi ? 
 [1] : jouer une carte ?
@@ -22,3 +22,1837 @@ Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as :
  Armure : 0
 
  Faites un choix : 
+tu as choisi : 2
+Medivh a subi 5 points de dégats, sa vie est  mtn de : 25
+Jaina utilise sa capacité spéciale sur Medivh infligeant 5 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 8
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 2
+Medivh utilise sa capacité spéciale et gagne 5 points d'armure.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 30
+ Mana Actuel : 9
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 2
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 30
+ Mana Actuel : 9
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 9
+ Puissance d'attaque : 1
+ Armure : 4
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 29
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 29
+ Mana Actuel : 10
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 10
+ Puissance d'attaque : 1
+ Armure : 3
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 28
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 28
+ Mana Actuel : 11
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 11
+ Puissance d'attaque : 1
+ Armure : 2
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 27
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 27
+ Mana Actuel : 12
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 12
+ Puissance d'attaque : 1
+ Armure : 1
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 26
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 26
+ Mana Actuel : 13
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 13
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 25
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 25
+ Mana Actuel : 14
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 24
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 24
+ Mana Actuel : 14
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 24
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 24
+ Mana Actuel : 15
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 23
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 23
+ Mana Actuel : 15
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 23
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 23
+ Mana Actuel : 16
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 22
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 22
+ Mana Actuel : 16
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 22
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 22
+ Mana Actuel : 17
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 21
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 21
+ Mana Actuel : 17
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 21
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 21
+ Mana Actuel : 18
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 20
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 20
+ Mana Actuel : 18
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 20
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 20
+ Mana Actuel : 19
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 19
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 19
+ Mana Actuel : 19
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 19
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 19
+ Mana Actuel : 20
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 18
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 18
+ Mana Actuel : 20
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 18
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 18
+ Mana Actuel : 21
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 17
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 17
+ Mana Actuel : 21
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 17
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 17
+ Mana Actuel : 22
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 16
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 16
+ Mana Actuel : 22
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 16
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 16
+ Mana Actuel : 23
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 15
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 15
+ Mana Actuel : 23
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 15
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 15
+ Mana Actuel : 24
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 14
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 14
+ Mana Actuel : 24
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 14
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 14
+ Mana Actuel : 25
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 13
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 13
+ Mana Actuel : 25
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 13
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 13
+ Mana Actuel : 26
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 12
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 12
+ Mana Actuel : 26
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 12
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 12
+ Mana Actuel : 27
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 11
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 11
+ Mana Actuel : 27
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 11
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 11
+ Mana Actuel : 28
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 44
+Choix invalide
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 11
+ Mana Actuel : 28
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 10
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 10
+ Mana Actuel : 28
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 10
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 10
+ Mana Actuel : 29
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 9
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 9
+ Mana Actuel : 29
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 9
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 9
+ Mana Actuel : 30
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 8
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 8
+ Mana Actuel : 30
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 8
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 8
+ Mana Actuel : 31
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 7
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 7
+ Mana Actuel : 31
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 7
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 7
+ Mana Actuel : 32
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 6
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 6
+ Mana Actuel : 32
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 6
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 6
+ Mana Actuel : 33
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 5
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 5
+ Mana Actuel : 33
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 5
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 5
+ Mana Actuel : 34
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 4
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 4
+ Mana Actuel : 34
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 4
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 4
+ Mana Actuel : 35
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 3
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 3
+ Mana Actuel : 35
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 3
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 3
+ Mana Actuel : 36
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 2
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 2
+ Mana Actuel : 36
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 2
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 2
+ Mana Actuel : 37
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 1
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 1
+ Mana Actuel : 37
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 1
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+-----------------------------
+Deck de Jaina:
+
+Carte{ id=5 vie=5, nom='Mage du Feu', coutMana=5, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=28 vie=5, nom='Mage Guérisseur', coutMana=6, degatsAttaque=0, armureAjoutee=0, santeRestauree=6, type='Soigneur'}
+Carte{ id=26 vie=5, nom='Guerrier Berserker', coutMana=3, degatsAttaque=5, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=27 vie=5, nom='Sentinelle Inébranlable', coutMana=8, degatsAttaque=0, armureAjoutee=8, santeRestauree=0, type='Protecteur'}
+Carte{ id=22 vie=5, nom='Sorcier Noir', coutMana=8, degatsAttaque=7, armureAjoutee=0, santeRestauree=0, type='Classique'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Jaina je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 1
+ Mana Actuel : 38
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Medivh a subi 1 points de dégats, sa vie est  mtn de : 0
+Jaina attaque Medivh infligeant 1 dégâts.
+
+Tour de jaina fini
+
+
+--------------
+Deck de Medivh:
+
+Carte{ id=32 vie=5, nom='Gardien Protecteur', coutMana=4, degatsAttaque=0, armureAjoutee=6, santeRestauree=0, type='Protecteur'}
+Carte{ id=31 vie=5, nom='Explosion de Lave', coutMana=2, degatsAttaque=3, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=47 vie=5, nom='Paladin de la Lumière', coutMana=7, degatsAttaque=0, armureAjoutee=4, santeRestauree=0, type='Protecteur'}
+Carte{ id=49 vie=5, nom='Soldat Endurci', coutMana=5, degatsAttaque=4, armureAjoutee=0, santeRestauree=0, type='Classique'}
+Carte{ id=51 vie=5, nom='Druide de la Forêt', coutMana=4, degatsAttaque=0, armureAjoutee=0, santeRestauree=3, type='Soigneur'}
+
+Vous voulez faire quoi ? 
+[1] : jouer une carte ?
+[2] : jouer votre sp�cial
+[3] : attaquer une cible ennemie avec une carte
+[4] : attaquer avec votre puissance d'attaque
+[5] : piocher une carte
+
+Medivh je t'ai remis ton Deck au dessus c'est ton tour , pour rappel tu as : 
+ Vie : 0
+ Mana Actuel : 38
+ Puissance d'attaque : 1
+ Armure : 0
+
+ Faites un choix : 
+tu as choisi : 4
+Jaina a subi 1 points de dégats, sa vie est  mtn de : 0
+Medivh attaque Jaina infligeant 1 dégâts.
+Tour de medivh fini
+
+Je reset le mana ( +1 bien sur ^^) 
+Medivh a gagn� la partie.
