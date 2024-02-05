@@ -105,7 +105,7 @@ public class Monitor extends PlateauDeJeu{
 						        							        			
 						        		case 2 :
 						        							        			
-											Logger.log("Entrez l'id de la carte que vous voulez utiliser : ");
+										Logger.log("Entrez l'id de la carte que vous voulez utiliser : ");
 						        			boolean test = false;
 						        			while (test != true) {
 						        				
